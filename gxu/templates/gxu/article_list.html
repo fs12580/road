@@ -1,0 +1,29 @@
+{% extends 'gxu/base.html' %} {% block title %} - 政策{% endblock %} {% block css %}
+<link rel="stylesheet" href="/static/css/article.css"> {% endblock %} {% block main %}
+<div class="banner">
+    <div class="banner-main">
+        <img src="/static/images/banner-policy.png" alt="">
+    </div>
+</div>
+<div class="wrapper">
+    <div class="container">
+        <p class="title">
+        {% if index == 'policy' %}
+            <img src="/static/images/policy.png" alt="">
+        {% elif index == 'information' %}
+            <img src="/static/images/news.png" alt="">
+        {% elif index == 'culture' %}
+            <img src="/static/images/culture.png" alt="">
+        {% else %}
+            <img src="/static/images/ours.png" alt="">
+        {%  endif %}
+        </p>
+        <div class="content">
+            {% for ar in article %}
+            <a href="{% url 'article_detail' ar.id %}">{{ar.title}}</a>
+            <p class="info">{{ar.introduction}}...</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

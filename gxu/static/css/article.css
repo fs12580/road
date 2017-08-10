@@ -1,0 +1,56 @@
+body {
+  background-color: #ffffff; }
+
+.banner {
+  width: 100%;
+  min-width: 1200px;
+  text-align: center; }
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 80px; }
+  .wrapper .title {
+    margin-bottom: 40px; }
+    .wrapper .title img {
+      width: 300px; }
+  .wrapper .container {
+    background-image: url(../images/tiao_policy.png);
+    background-repeat: no-repeat;
+    min-height: 600px;
+    background-position: 0 15px; }
+    .wrapper .container .content {
+      padding-left: 50px; }
+    .wrapper .container a {
+      color: #92b7d0;
+      text-decoration: none;
+      font-size: 16px; }
+      .wrapper .container a:hover {
+        text-decoration: underline; }
+    .wrapper .container .info {
+      margin-top: 10px;
+      margin-bottom: 20px; }
+
+.detail-wrapper {
+  padding-top: 40px;
+  padding-bottom: 80px; }
+  .detail-wrapper .title {
+    margin-bottom: 40px; }
+    .detail-wrapper .title img {
+      width: 300px; }
+  .detail-wrapper .content {
+    min-height: 600px;
+    border: 2px solid #ccc;
+    box-shadow: 1px 1px 10px 10px #eee;
+    border-radius: 10px;
+    padding: 20px 40px;
+    background-color: #f1f4f2; }
+    .detail-wrapper .content .content-title {
+      text-align: center;
+      font-size: 18px;
+      margin: 0;
+      margin-bottom: 20px;
+      color: #7a95e7; }
+    .detail-wrapper .content .content-main {
+      font-size: 14px; }
+
+/*# sourceMappingURL=article.css.map */
