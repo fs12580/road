@@ -1,6 +1,0 @@
-{% block content %}
-{% for post in post_list %}
-<a href="{% url "detail" id=post.id %}">{{ post.title }}</a><br>
-{{ post.introduction }}<br>
-{% endfor %}
-{% endblock %}
