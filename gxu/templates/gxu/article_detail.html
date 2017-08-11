@@ -1,0 +1,17 @@
+{% extends 'gxu/base.html' %} {% block title %} - 政策{% endblock %} {% block css %}
+<link rel="stylesheet" href="/static/css/article.css"> {% endblock %} {% block main %}
+<div class="banner">
+    <div class="banner-main">
+        <img src="/static/images/banner-policy.png" alt="">
+    </div>
+</div>
+<div class="detail-wrapper">
+    <div class="container">
+        <p class="title"><img src="/static/images/policy.png" alt=""></p>
+        <div class="content">
+            <h2 class="content-title">{{post.title}}</h2>
+            <div class="content-main">{{post.content}}</div>
+        </div>
+    </div>
+</div>
+{% endblock %}

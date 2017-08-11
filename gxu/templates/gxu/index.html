@@ -1,6 +1,55 @@
-{% block content %}
-{% for post in post_list %}
-<a href="{% url "detail" id=post.id %}">{{ post.title }}</a><br>
-{{ post.introduction }}<br>
-{% endfor %}
+{% extends 'gxu/base.html' %} {% block title %} - 首页{% endblock %} {% block css %}
+<link rel="stylesheet" href="/static/css/index.css"> {% endblock %} {% block main %}
+<div class="banner">
+    <div class="banner-main">
+        <img src="/static/images/banner1.png" alt="">
+    </div>
+</div>
+<div class="wrapper">
+    <div class="container">
+        <p class="title">八桂儿女贯彻习近平总书记视察广西重要指示精神：敢为人先打造海上丝路大通道</p>
+        <div class="row first">
+            <div class="row-item policy">
+                <div class="item-title"><img src="/static/images/policy.png" alt=""></div>
+                <div class="content">
+                    {% for i in policy %}
+                    <a href="{% url 'article_detail' i.id %}" class="content-target">{{i.title}}</a>
+                    <p>{{i.introduction}}...</p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="square">
+                <img src="/static/images/tu2.jpg" alt="">
+                <p>广西北海铁山港码头、金海湾红树林生态保护区美丽景观</p>
+            </div>
+            <div class="row-item culture">
+                <div class="item-title"><img src="/static/images/culture.png" alt=""></div>
+                <div class="content">
+                    <h3>歌曲</h3>
+                    <a href="">吴碧霞 - 风生水起北部湾</a>
+                    <a href="">吴碧霞 - 风生水起北部湾</a>
+                    <a href="">吴碧霞 - 风生水起北部湾</a>
+                    <h3>视频</h3>
+                    <a href="">“一带一路”奇幻之路</a>
+                    <a href="">“一带一路”奇幻之路</a>
+                    <a href="">“一带一路”奇幻之路</a>
+                </div>
+            </div>
+        </div>
+        <div class="row second">
+            <div class="title"><img src="/static/images/news.png" alt=""></div>
+            <div class="item-wrapper">
+                {% for i in information %}
+                <div class="item clearfix">
+                    <div class="item-left"><img src="{{i.headimg}}" alt=""></div>
+                    <div class="item-right">
+                        <a href="{% url 'article_detail' i.id %}"><h3>{{i.title}}</h3></a>
+                        <p>{{i.introduction}}...</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
