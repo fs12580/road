@@ -21,3 +21,20 @@ class Article(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Music(models.Model):
+    name = models.CharField('歌名', max_length=100)
+    musicurl = models.CharField('歌曲地址', max_length=200, null=True)
+
+    def __str__(self):
+        return self.name
+
+
+class Movie(models.Model):
+    name = models.CharField('视频名', max_length=100)
+    movieurl = models.CharField('视频地址', max_length=200, null=True)
+
+    def __str__(self):
+        return self.name
+
