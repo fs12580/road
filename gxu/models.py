@@ -1,6 +1,7 @@
 # coding: utf-8
 from django.db import models
 from django.contrib.auth.models import User, Group
+from simditor.fields import RichTextField
 
 # Create your models here.
 
@@ -17,7 +18,7 @@ class Article(models.Model):
     category = models.CharField(
         '类型', max_length=10, choices=CATEGORY_CHOICES, default='政策')
     introduction = models.TextField(blank=True, null=True)  # 文章摘要
-    content = models.TextField(blank=True, null=True)  # 文章正文
+    content = RichTextField()  # 文章正文
 
     def __str__(self):
         return self.title

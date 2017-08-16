@@ -23,7 +23,7 @@ SECRET_KEY = 'i)-8s#^&=^*7merkjvpt12#%a1#y_sl$b!(qgl=h-hml00#kcq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.2', '127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.2', '127.0.0.1', '123.207.55.254']
 
 
 # Application definition
@@ -35,6 +35,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'simditor',
     'gxu',
 )
 
