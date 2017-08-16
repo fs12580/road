@@ -57,6 +57,7 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
@@ -270,6 +271,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -305,6 +307,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -394,17 +397,22 @@ a:focus {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
   box-shadow: 0 0 1px transparent;
   position: relative;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
-  transition-property: transform; }
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform; }
 
 .hvr-float-shadow:hover
  {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
+  -webkit-box-shadow: 0 5px 22px 2px rgba(0, 0, 0, 0.35) !important;
   box-shadow: 0 5px 22px 2px rgba(0, 0, 0, 0.35) !important;
   /* move the element up by 5px */ }
 
@@ -461,6 +469,7 @@ a:focus {
           color: #bec6ca; }
         .nav .nav-right li a.nav-item {
           background-color: #bec6ca;
+          -webkit-box-shadow: 0 1px 0px 0px #222;
           box-shadow: 0 1px 0px 0px #222; }
           .nav .nav-right li a.nav-item:hover {
             background-color: #fff; }
@@ -485,6 +494,7 @@ a:focus {
 /*模态框重构*/
 .modal .modal-dialog {
   width: 1120px;
+  -webkit-box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   margin: 0 auto;
