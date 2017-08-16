@@ -27,6 +27,9 @@ class Article(models.Model):
 class Music(models.Model):
     name = models.CharField(max_length=20)
     url = models.CharField(u'音乐路径', max_length=1000)
+    author = models.CharField(u'歌手', max_length=20)
+    cover = models.CharField(u'封面图片', max_length=1000)
+    content = RichTextField(u'歌词')
 
     def __str__(self):
         return self.name

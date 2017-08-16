@@ -23,7 +23,7 @@
             <div class="content-title">歌曲</div>
             <ul>
                 {% for m in music %}
-                <li><a href="{{m.url}}">{{m.name}}</a></li>
+                <li><a href="{% url 'music' m.id %}">{{m.name}}</a></li>
                 {% endfor %}
             </ul>
             <div class="content-title">视频</div>
@@ -31,7 +31,7 @@
                 {% for v in video %}
                 <li>
                     <p class="video-title">{{v.name}}</p>
-                    <a href="{{v.url}}"><img src="{{v.headimg}}" alt=""></a>
+                    <a href="{% url 'video' v.id %}"><img src="{{v.headimg}}" alt=""></a>
                 </li>
                 {% endfor %}
             </ul>

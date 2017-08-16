@@ -56,6 +56,32 @@ def article_detail(request, id):
     return render(request, 'gxu/article_detail.html', {'post': post})
 
 
+def music(request, id):
+    try:
+        data = {
+            'post': Music.objects.get(id=str(id)),
+            'index': 'culture',
+            'culture': 'music'
+
+        }
+    except Music.DoesNotExist:
+        raise Http404
+    return render(request, 'gxu/article_detail.html', data)
+
+
+def video(request, id):
+    try:
+        data = {
+            'post': Video.objects.get(id=str(id)),
+            'index': 'culture',
+            'culture': 'video'
+
+        }
+    except Video.DoesNotExist:
+        raise Http404
+    return render(request, 'gxu/article_detail.html', data)
+
+
 # 文化
 def culture(request):
     return render(request, 'gxu/culture.html')

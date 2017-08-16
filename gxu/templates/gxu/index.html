@@ -27,11 +27,11 @@
                 <div class="content">
                     <h3>歌曲</h3>
                     {% for m in music %}
-                    <a href="{{m.url}}">{{m.name}}</a>
+                    <a href="{% url 'music' m.id %}">{{m.name}}</a>
                     {% endfor %}
                     <h3>视频</h3>
                     {% for v in video %}
-                    <a href="{{v.url}}">{{v.name}}</a>
+                    <a href="{% url 'video' v.id %}">{{v.name}}</a>
                     {% endfor %}
                 </div>
             </div>

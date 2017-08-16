@@ -1,5 +1,6 @@
 {% extends 'gxu/base.html' %} {% block title %} - 政策{% endblock %} {% block css %}
-<link rel="stylesheet" href="/static/css/article.css"> {% endblock %} {% block main %}
+<link rel="stylesheet" href="/static/css/article.css"> {% if culture == 'video' %}
+<link href="/static/css/px-video.css" rel="stylesheet"> {% endif %} {% endblock %} {% block main %}
 <div class="banner">
     <div class="banner-main">
         <img src="/static/images/banner-policy.png" alt="">
@@ -7,15 +8,88 @@
 </div>
 <div class="detail-wrapper">
     <div class="container">
-        <p class="title"><img src="/static/images/policy.png" alt=""></p>
+        <p class="title">
+            {% if index == 'policy' %}
+            <img src="/static/images/policy.png" alt=""> {% elif index == 'information' %}
+            <img src="/static/images/news.png" alt=""> {% elif index == 'culture' %}
+            <img src="/static/images/culture.png" alt=""> {% else %}
+            <img src="/static/images/we.png" alt=""> {% endif %}
+        </p>
+        {% if index == 'culture' %} {% if culture == 'music' %}
+        <div id="skPlayer" style="margin: 30px auto 100px;width: 600px"></div>
+        <div class="content" style="width: 700px;margin: 0 auto">
+            {% autoescape off %} {{post.content|safe}} {% endautoescape %}
+        </div>
+        {% endif %} {% if culture == 'video' %}
+        <h3 style="text-align: center;">{{post.name}}</h3>
+        <div class="px-video-container" id="myvid">
+            <div class="px-video-img-captions-container">
+                <div class="px-video-captions hide" aria-hidden="true">{{post.name}}</div>
+                <video width="1000" height="500" poster="{{post.headimg}}" controls>
+                    <source src="{{post.url}}" type="video/mp4" />
+                    <!-- <track kind="captions" label="English captions" src="/static/video/media/foo.vtt" srclang="en" default /> -->
+                    <div>
+                        <a href="{{post.url}}">
+                    <img src="{{post.img}}" width="640" height="360" alt="download video" />
+                </a>
+                    </div>
+                </video>
+            </div>
+            <div class="px-video-controls"></div>
+        </div>
+        {% endif %} {% else %}
         <div class="content">
             <h2 class="content-title">{{post.title}}</h2>
             <div class="content-main">
-		{% autoescape off %}
-                  {{post.content|safe}}
-                {% endautoescape %}		
-	    </div>
+                {% autoescape off %} {{post.content|safe}} {% endautoescape %}
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>
-{% endblock %}
+{% endblock %} {% block js %} {% if culture == 'music' %}
+<script src="/static/skPlayer/dist/skPlayer.min.js"></script>
+<script>
+var player = new skPlayer({
+    autoplay: true,
+    //可选项,自动播放,默认为false,true/false
+    listshow: true,
+    //可选项,列表显示,默认为true,true/false
+    mode: 'listloop',
+    //可选项,循环模式,默认为'listloop'
+    //'listloop',列表循环
+    //'singleloop',单曲循环
+    music: {
+        //必需项,音乐配置
+        type: 'file',
+        //必需项,自配置文件方式指定填'file'
+        source: [
+            //必需项,音乐文件数组
+            {
+                name: '{{post.name}}',
+                //必需项,歌名
+                author: '{{post.author}}',
+                //必需项,歌手
+                src: '{{post.url}}',
+                //必需项,音乐文件
+                cover: '{{post.cover}}'
+                //必需项,封面图片
+            }
+        ]
+    }
+});
+</script>
+{% endif %} {% if culture == 'video' %}
+<script src="/static/js/strings.js" type="text/javascript"></script>
+<script src="/static/js/px-video.js"></script>
+<script>
+// Initialize
+new InitPxVideo({
+    "videoId": "myvid",
+    "captionsOnDefault": true,
+    "seekInterval": 20,
+    "videoTitle": "clips of stand-up comedy",
+    "debug": true
+});
+</script>
+{% endif %} {% endblock %}
