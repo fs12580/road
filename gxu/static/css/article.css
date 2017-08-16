@@ -5,10 +5,14 @@ body {
   width: 100%;
   min-width: 1200px;
   text-align: center; }
+  .banner .banner-main img {
+    max-width: 100%; }
 
 .wrapper {
   padding-top: 40px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  background-image: url(../images/ar-bg.png);
+  background-size: 100% 100%; }
   .wrapper .title {
     margin-bottom: 40px; }
     .wrapper .title img {
@@ -20,12 +24,48 @@ body {
     background-position: 0 15px; }
     .wrapper .container .content {
       padding-left: 50px; }
-    .wrapper .container a {
-      color: #92b7d0;
-      text-decoration: none;
-      font-size: 16px; }
-      .wrapper .container a:hover {
-        text-decoration: underline; }
+      .wrapper .container .content > a {
+        color: #3259c7;
+        text-decoration: none;
+        font-size: 16px; }
+        .wrapper .container .content > a:hover {
+          text-decoration: underline; }
+    .wrapper .container .culture-content {
+      padding-left: 50px; }
+      .wrapper .container .culture-content .content-title {
+        font-size: 22px;
+        color: #4e75df;
+        margin: 15px 0; }
+      .wrapper .container .culture-content ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 100px; }
+        .wrapper .container .culture-content ul li a {
+          text-decoration: none;
+          line-height: 20px;
+          color: #222; }
+          .wrapper .container .culture-content ul li a:hover {
+            text-decoration: underline; }
+      .wrapper .container .culture-content .video {
+        overflow: auto; }
+        .wrapper .container .culture-content .video li {
+          float: left;
+          width: 25%;
+          text-align: center; }
+          .wrapper .container .culture-content .video li img {
+            width: 200px;
+            height: 150px;
+            border: 4px solid #4e75df; }
+    .wrapper .container .we-content {
+      padding-left: 50px; }
+      .wrapper .container .we-content h3 {
+        font-weight: normal;
+        margin-top: 50px; }
+        .wrapper .container .we-content h3 span {
+          font-weight: bold;
+          color: #3259c7; }
+        .wrapper .container .we-content h3:first-child {
+          margin: 0; }
     .wrapper .container .info {
       margin-top: 10px;
       margin-bottom: 20px; }
@@ -39,11 +79,11 @@ body {
       width: 300px; }
   .detail-wrapper .content {
     min-height: 600px;
-    border: 2px solid #ccc;
-    box-shadow: 1px 1px 10px 10px #eee;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px 3px #eee;
     border-radius: 10px;
     padding: 20px 40px;
-    background-color: #f1f4f2; }
+    background-color: rgba(241, 244, 242, 0.5); }
     .detail-wrapper .content .content-title {
       text-align: center;
       font-size: 18px;

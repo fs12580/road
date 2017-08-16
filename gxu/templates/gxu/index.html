@@ -26,13 +26,13 @@
                 <div class="item-title"><img src="/static/images/culture.png" alt=""></div>
                 <div class="content">
                     <h3>歌曲</h3>
-                    <a href="">吴碧霞 - 风生水起北部湾</a>
-                    <a href="">吴碧霞 - 风生水起北部湾</a>
-                    <a href="">吴碧霞 - 风生水起北部湾</a>
+                    {% for m in music %}
+                    <a href="{{m.url}}">{{m.name}}</a>
+                    {% endfor %}
                     <h3>视频</h3>
-                    <a href="">“一带一路”奇幻之路</a>
-                    <a href="">“一带一路”奇幻之路</a>
-                    <a href="">“一带一路”奇幻之路</a>
+                    {% for v in video %}
+                    <a href="{{v.url}}">{{v.name}}</a>
+                    {% endfor %}
                 </div>
             </div>
         </div>

@@ -1,6 +1,8 @@
 from django.shortcuts import render
 # from django.http import HttpResponse
 from .models import Article
+from .models import Music
+from .models import Video
 from django.http import Http404
 
 # 主页面
@@ -12,6 +14,8 @@ def index(request):
         'policy': Article.objects.filter(category=list[0])[0:2],
         'information': Article.objects.filter(category=list[1]),
         'culture': Article.objects.filter(category=list[2])[0:4],
+        'music': Music.objects.all()[0:3],
+        'video': Video.objects.all()[0:3]
     }
     return render(request, 'gxu/index.html', data)
 
@@ -19,7 +23,7 @@ def index(request):
 # 文章
 def article_list(request, category):
     # post_list = Article.objects.all()[:2]
-    list = ['政策', '资讯', '文化']
+    list = ['政策', '资讯']
     if category == '1':
         data = {
             'index': 'policy',
@@ -33,7 +37,12 @@ def article_list(request, category):
     if category == '3':
         data = {
             'index': 'culture',
-            'article': Article.objects.filter(category=list[int(category) - 1])
+            'music': Music.objects.all(),
+            'video': Video.objects.all()
+        }
+    if category == '4':
+        data = {
+            'index': 'we'
         }
     return render(request, 'gxu/article_list.html', data)
 

@@ -1,36 +1,93 @@
-body{
-	background-color: #ffffff;
+body {
+    background-color: #ffffff;
 }
 
 .banner {
     width: 100%;
     min-width: 1200px;
     text-align: center;
+    .banner-main {
+        img {
+            max-width: 100%;
+        }
+    }
 }
 
 .wrapper {
     padding-top: 40px;
     padding-bottom: 80px;
+    background-image: url(../images/ar-bg.png);
+    background-size: 100% 100%;
     .title {
-    	margin-bottom: 40px;
+        margin-bottom: 40px;
         img {
             width: 300px;
         }
     }
     .container {
-    	background-image: url(../images/tiao_policy.png);
-	    background-repeat: no-repeat;
-		min-height: 600px;
-		background-position: 0 15px;
-    	.content{
-    		padding-left: 50px;
-    	}
-        a {
-            color: #92b7d0;
-            text-decoration: none;
-            font-size: 16px;
-            &:hover {
-                text-decoration: underline;
+        background-image: url(../images/tiao_policy.png);
+        background-repeat: no-repeat;
+        min-height: 600px;
+        background-position: 0 15px;
+        .content {
+            padding-left: 50px;
+            >a {
+                color: #3259c7;
+                text-decoration: none;
+                font-size: 16px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .culture-content {
+            padding-left: 50px;
+            .content-title {
+                font-size: 22px;
+                color: #4e75df;
+                margin: 15px 0;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                margin-bottom: 100px;
+                li {
+                    a {
+                        text-decoration: none;
+                        line-height: 20px;
+                        color: #222;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .video {
+                overflow: auto;
+                li {
+                    float: left;
+                    width: 25%;
+                    text-align: center;
+                    img {
+                        width: 200px;
+                        height: 150px;
+                        border: 4px solid #4e75df;
+                    }
+                }
+            }
+        }
+        .we-content {
+            padding-left: 50px;
+            h3 {
+                font-weight: normal;
+                margin-top: 50px;
+                span {
+                    font-weight: bold;
+                    color: #3259c7;
+                }
+                &:first-child {
+                    margin: 0;
+                }
             }
         }
         .info {
@@ -40,7 +97,7 @@ body{
     }
 }
 
-.detail-wrapper{
+.detail-wrapper {
     padding-top: 40px;
     padding-bottom: 80px;
     .title {
@@ -49,21 +106,21 @@ body{
             width: 300px;
         }
     }
-    .content{
+    .content {
         min-height: 600px;
-        border: 2px solid #ccc;
-        box-shadow: 1px 1px 10px 10px #eee;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 1px 3px #eee;
         border-radius: 10px;
         padding: 20px 40px;
-        background-color: #f1f4f2;
-        .content-title{
+        background-color: rgba(241, 244, 242, .5);
+        .content-title {
             text-align: center;
             font-size: 18px;
             margin: 0;
             margin-bottom: 20px;
             color: #7a95e7;
         }
-        .content-main{
+        .content-main {
             font-size: 14px;
         }
     }

@@ -11,6 +11,7 @@ html {
 
 
 
+
 /* Sections
    ========================================================================== */
 
@@ -22,6 +23,7 @@ html {
 body {
     margin: 0;
 }
+
 
 
 
@@ -40,6 +42,7 @@ section {
 
 
 
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -49,6 +52,7 @@ h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
+
 
 
 
@@ -70,6 +74,7 @@ main {
 
 
 
+
 /**
  * Add the correct margin in IE 8.
  */
@@ -77,6 +82,7 @@ main {
 figure {
     margin: 1em 40px;
 }
+
 
 
 
@@ -96,6 +102,7 @@ hr {
 
 
 
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -107,6 +114,7 @@ pre {
     font-size: 1em;
     /* 2 */
 }
+
 
 
 
@@ -128,6 +136,7 @@ a {
 
 
 
+
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -144,6 +153,7 @@ abbr[title] {
 
 
 
+
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
@@ -155,6 +165,7 @@ strong {
 
 
 
+
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
@@ -163,6 +174,7 @@ b,
 strong {
     font-weight: bolder;
 }
+
 
 
 
@@ -182,6 +194,7 @@ samp {
 
 
 
+
 /**
  * Add the correct font style in Android 4.3-.
  */
@@ -189,6 +202,7 @@ samp {
 dfn {
     font-style: italic;
 }
+
 
 
 
@@ -203,6 +217,7 @@ mark {
 
 
 
+
 /**
  * Add the correct font size in all browsers.
  */
@@ -210,6 +225,7 @@ mark {
 small {
     font-size: 80%;
 }
+
 
 
 
@@ -236,6 +252,7 @@ sup {
 
 
 
+
 /* Embedded content
    ========================================================================== */
 
@@ -251,6 +268,7 @@ video {
 
 
 
+
 /**
  * Add the correct display in iOS 4-7.
  */
@@ -259,6 +277,7 @@ audio:not([controls]) {
     display: none;
     height: 0;
 }
+
 
 
 
@@ -272,6 +291,7 @@ img {
 
 
 
+
 /**
  * Hide the overflow in IE.
  */
@@ -279,6 +299,7 @@ img {
 svg:not(:root) {
     overflow: hidden;
 }
+
 
 
 
@@ -308,6 +329,7 @@ textarea {
 
 
 
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -318,6 +340,7 @@ input {
     /* 1 */
     overflow: visible;
 }
+
 
 
 
@@ -334,6 +357,7 @@ select {
 
 
 
+
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
  *    controls in Android 4.
@@ -344,6 +368,7 @@ button,
 html [type="button"],
 
 
+
 /* 1 */
 
 [type="reset"],
@@ -351,6 +376,7 @@ html [type="button"],
     -webkit-appearance: button;
     /* 2 */
 }
+
 
 
 
@@ -368,6 +394,7 @@ button::-moz-focus-inner,
 
 
 
+
 /**
  * Restore the focus styles unset by the previous rule.
  */
@@ -381,6 +408,7 @@ button:-moz-focusring,
 
 
 
+
 /**
  * Correct the padding in Firefox.
  */
@@ -388,6 +416,7 @@ button:-moz-focusring,
 fieldset {
     padding: 0.35em 0.75em 0.625em;
 }
+
 
 
 
@@ -415,6 +444,7 @@ legend {
 
 
 
+
 /**
  * 1. Add the correct display in IE 9-.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
@@ -429,6 +459,7 @@ progress {
 
 
 
+
 /**
  * Remove the default vertical scrollbar in IE.
  */
@@ -436,6 +467,7 @@ progress {
 textarea {
     overflow: auto;
 }
+
 
 
 
@@ -454,6 +486,7 @@ textarea {
 
 
 
+
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
@@ -462,6 +495,7 @@ textarea {
 [type="number"]::-webkit-outer-spin-button {
     height: auto;
 }
+
 
 
 
@@ -479,6 +513,7 @@ textarea {
 
 
 
+
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
@@ -487,6 +522,7 @@ textarea {
 [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
+
 
 
 
@@ -504,6 +540,7 @@ textarea {
 
 
 
+
 /* Interactive
    ========================================================================== */
 
@@ -516,11 +553,13 @@ textarea {
 details,
 
 
+
 /* 1 */
 
 menu {
     display: block;
 }
+
 
 
 
@@ -531,6 +570,7 @@ menu {
 summary {
     display: list-item;
 }
+
 
 
 
@@ -548,6 +588,7 @@ canvas {
 
 
 
+
 /**
  * Add the correct display in IE.
  */
@@ -555,6 +596,7 @@ canvas {
 template {
     display: none;
 }
+
 
 
 
@@ -577,6 +619,7 @@ body {
 a:focus {
     outline: none;
 }
+
 
 
 
@@ -633,6 +676,15 @@ a:focus {
     width: 100%;
     min-width: 1200px;
     background-color: #87969f;
+    .nav-left {
+        float: left;
+        margin: 0;
+        padding: 20px 0;
+        margin-left: 100px;
+        img{
+            vertical-align: middle;
+        }
+    }
     .nav-right {
         list-style: none;
         float: right;
@@ -650,6 +702,10 @@ a:focus {
                 margin: 0 12.5px;
                 border-radius: 2px;
                 text-decoration: none;
+                img {
+                    width: 50px;
+                    vertical-align: middle;
+                }
                 &:hover {
                     color: #bec6ca;
                 }
@@ -659,6 +715,12 @@ a:focus {
                     &:hover {
                         background-color: #fff;
                     }
+                }
+            }
+            &:nth-child(1) {
+                a {
+                    padding: 0 20px;
+                    margin: 0;
                 }
             }
         }
@@ -681,6 +743,7 @@ a:focus {
         line-height: 2;
     }
 }
+
 
 
 
