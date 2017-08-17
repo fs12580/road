@@ -11,11 +11,12 @@ from django.http import Http404
 def index(request):
     list = ['政策', '资讯', '文化']
     data = {
-        'policy': Article.objects.filter(category=list[0])[0:6],
+        'policy': Article.objects.filter(category=list[0])[0:8],
+        'policy_first': Article.objects.filter(category=list[0])[0:1],
         'information': Article.objects.filter(category=list[1])[0:6],
-        'music': Music.objects.all()[0:3],
-        'video': Video.objects.all()[0:3],
-        'page': 'index'
+        'information_first': Article.objects.filter(category=list[1])[0:1],
+        'music': Music.objects.all()[0:8],
+        'video': Video.objects.all()[0:8]
     }
     return render(request, 'gxu/index.html', data)
 
@@ -27,22 +28,26 @@ def article_list(request, category):
     if category == '1':
         data = {
             'index': 'policy',
-            'article': Article.objects.filter(category=list[int(category) - 1])
+            'article': Article.objects.filter(category=list[int(category) - 1]),
+            'page': 'policy'
         }
     if category == '2':
         data = {
             'index': 'information',
-            'article': Article.objects.filter(category=list[int(category) - 1])
+            'article': Article.objects.filter(category=list[int(category) - 1]),
+            'page': 'information'
         }
     if category == '3':
         data = {
             'index': 'culture',
             'music': Music.objects.all(),
-            'video': Video.objects.all()
+            'video': Video.objects.all(),
+            'page': 'culture'
         }
     if category == '4':
         data = {
-            'index': 'we'
+            'index': 'we',
+            'page': 'we'
         }
     return render(request, 'gxu/article_list.html', data)
 

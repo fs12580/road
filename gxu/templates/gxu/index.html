@@ -8,8 +8,12 @@ body {
 {% endblock %} {% block main %}
 <div class="wrapper">
     <div class="hot-ar">
-        <p class="title-top"><a href="">{{policy|first}}</a></p>
-        <p class="title-second"><a href="">{{information|first}}</a></p>
+        {% for i in policy_first %}
+        <p class="title-top"><a href="{% url 'article_detail' i.id %}">{{i.title}}</a></p>
+        {% endfor %}
+        {% for i in information_first %}
+        <p class="title-second"><a href="{% url 'article_detail' i.id %}">{{i.title}}</a></p>
+        {% endfor %}
     </div>
     <div class="container main-content">
         <div class="row first clearfix">

@@ -883,6 +883,9 @@ a:focus {
                     background-color: #245f8a;
                 }
             }
+            &.nav-checked{
+                background-color: #245f8a;
+            }
         }
         &:nth-child(1) {
             a {
@@ -891,10 +894,6 @@ a:focus {
             }
         }
     }
-}
-
-.nav-checked {
-    border-bottom: 6px solid #FF6868;
 }
 
 .footer {

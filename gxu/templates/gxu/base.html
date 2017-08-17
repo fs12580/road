@@ -23,11 +23,11 @@
     </div>
     <ul class="nav-second clearfix">
         <div class="second-wrapper">
-            <li><a href="{% url 'index' %}" class="nav-item"><img src="/static/images/home-icon.png" alt=""></a></li>
-            <li><a href="{% url 'article_list' 1 %}" class="nav-item {% if nav_page %}nav-checked{% endif %}">政策</a></li>
-            <li><a href="{% url 'article_list' 2 %}" class="nav-item {% if nav_page %}nav-checked{% endif %}">资讯</a></li>
-            <li><a href="{% url 'article_list' 3 %}" class="nav-item {% if nav_page %}nav-checked{% endif %}">文化</a></li>
-            <li><a href="{% url 'article_list' 4 %}" class="nav-item {% if nav_page %}nav-checked{% endif %}">我们</a></li>
+            <li><a href="{% url 'index' %}" class="nav-item {% if page == 'index' %}nav-checked{% endif %}"><img src="/static/images/home-icon.png" alt=""></a></li>
+            <li><a href="{% url 'article_list' 1 %}" class="nav-item {% if page == 'policy' %}nav-checked{% endif %}">政策</a></li>
+            <li><a href="{% url 'article_list' 2 %}" class="nav-item {% if page == 'information' %}nav-checked{% endif %}">资讯</a></li>
+            <li><a href="{% url 'article_list' 3 %}" class="nav-item {% if page == 'culture' %}nav-checked{% endif %}">文化</a></li>
+            <li><a href="{% url 'article_list' 4 %}" class="nav-item {% if page == 'we' %}nav-checked{% endif %}">我们</a></li>
         </div>
     </ul>
     {% block main %} {% endblock %}
