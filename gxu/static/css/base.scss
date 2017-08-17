@@ -12,6 +12,9 @@ html {
 
 
 
+
+
+
 /* Sections
    ========================================================================== */
 
@@ -23,6 +26,9 @@ html {
 body {
     margin: 0;
 }
+
+
+
 
 
 
@@ -43,6 +49,9 @@ section {
 
 
 
+
+
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -52,6 +61,9 @@ h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
+
+
+
 
 
 
@@ -75,6 +87,9 @@ main {
 
 
 
+
+
+
 /**
  * Add the correct margin in IE 8.
  */
@@ -86,6 +101,9 @@ figure {
 
 
 
+
+
+
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
@@ -93,13 +111,16 @@ figure {
 
 hr {
     -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    box-sizing: content-box;
     /* 1 */
     height: 0;
     /* 1 */
     overflow: visible;
     /* 2 */
 }
+
+
+
 
 
 
@@ -115,6 +136,9 @@ pre {
     font-size: 1em;
     /* 2 */
 }
+
+
+
 
 
 
@@ -138,6 +162,9 @@ a {
 
 
 
+
+
+
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -155,6 +182,9 @@ abbr[title] {
 
 
 
+
+
+
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
@@ -167,6 +197,9 @@ strong {
 
 
 
+
+
+
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
@@ -175,6 +208,9 @@ b,
 strong {
     font-weight: bolder;
 }
+
+
+
 
 
 
@@ -196,6 +232,9 @@ samp {
 
 
 
+
+
+
 /**
  * Add the correct font style in Android 4.3-.
  */
@@ -203,6 +242,9 @@ samp {
 dfn {
     font-style: italic;
 }
+
+
+
 
 
 
@@ -219,6 +261,9 @@ mark {
 
 
 
+
+
+
 /**
  * Add the correct font size in all browsers.
  */
@@ -226,6 +271,9 @@ mark {
 small {
     font-size: 80%;
 }
+
+
+
 
 
 
@@ -254,6 +302,9 @@ sup {
 
 
 
+
+
+
 /* Embedded content
    ========================================================================== */
 
@@ -270,6 +321,9 @@ video {
 
 
 
+
+
+
 /**
  * Add the correct display in iOS 4-7.
  */
@@ -278,6 +332,9 @@ audio:not([controls]) {
     display: none;
     height: 0;
 }
+
+
+
 
 
 
@@ -293,6 +350,9 @@ img {
 
 
 
+
+
+
 /**
  * Hide the overflow in IE.
  */
@@ -300,6 +360,9 @@ img {
 svg:not(:root) {
     overflow: hidden;
 }
+
+
+
 
 
 
@@ -331,6 +394,9 @@ textarea {
 
 
 
+
+
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -341,6 +407,9 @@ input {
     /* 1 */
     overflow: visible;
 }
+
+
+
 
 
 
@@ -359,6 +428,9 @@ select {
 
 
 
+
+
+
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
  *    controls in Android 4.
@@ -370,6 +442,9 @@ html [type="button"],
 
 
 
+
+
+
 /* 1 */
 
 [type="reset"],
@@ -377,6 +452,9 @@ html [type="button"],
     -webkit-appearance: button;
     /* 2 */
 }
+
+
+
 
 
 
@@ -396,6 +474,9 @@ button::-moz-focus-inner,
 
 
 
+
+
+
 /**
  * Restore the focus styles unset by the previous rule.
  */
@@ -406,6 +487,9 @@ button:-moz-focusring,
 [type="submit"]:-moz-focusring {
     outline: 1px dotted ButtonText;
 }
+
+
+
 
 
 
@@ -421,6 +505,9 @@ fieldset {
 
 
 
+
+
+
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
@@ -430,7 +517,7 @@ fieldset {
 
 legend {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     /* 1 */
     color: inherit;
     /* 2 */
@@ -443,6 +530,9 @@ legend {
     white-space: normal;
     /* 1 */
 }
+
+
+
 
 
 
@@ -462,6 +552,9 @@ progress {
 
 
 
+
+
+
 /**
  * Remove the default vertical scrollbar in IE.
  */
@@ -469,6 +562,9 @@ progress {
 textarea {
     overflow: auto;
 }
+
+
+
 
 
 
@@ -481,11 +577,14 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     /* 1 */
     padding: 0;
     /* 2 */
 }
+
+
+
 
 
 
@@ -498,6 +597,9 @@ textarea {
 [type="number"]::-webkit-outer-spin-button {
     height: auto;
 }
+
+
+
 
 
 
@@ -517,6 +619,9 @@ textarea {
 
 
 
+
+
+
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
@@ -525,6 +630,9 @@ textarea {
 [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
+
+
+
 
 
 
@@ -544,6 +652,9 @@ textarea {
 
 
 
+
+
+
 /* Interactive
    ========================================================================== */
 
@@ -557,11 +668,17 @@ details,
 
 
 
+
+
+
 /* 1 */
 
 menu {
     display: block;
 }
+
+
+
 
 
 
@@ -573,6 +690,9 @@ menu {
 summary {
     display: list-item;
 }
+
+
+
 
 
 
@@ -592,6 +712,9 @@ canvas {
 
 
 
+
+
+
 /**
  * Add the correct display in IE.
  */
@@ -599,6 +722,9 @@ canvas {
 template {
     display: none;
 }
+
+
+
 
 
 
@@ -626,6 +752,9 @@ a:focus {
 
 
 
+
+
+
 /* Float Shadow */
 
 .hvr-float-shadow {
@@ -634,7 +763,7 @@ a:focus {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     -webkit-box-shadow: 0 0 1px transparent;
-            box-shadow: 0 0 1px transparent;
+    box-shadow: 0 0 1px transparent;
     position: relative;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
@@ -654,7 +783,7 @@ a:focus {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
     -webkit-box-shadow: 0 5px 22px 2px rgba(0, 0, 0, 0.35) !important;
-            box-shadow: 0 5px 22px 2px rgba(0, 0, 0, 0.35) !important;
+    box-shadow: 0 5px 22px 2px rgba(0, 0, 0, 0.35) !important;
     /* move the element up by 5px */
 }
 
@@ -680,57 +809,85 @@ a:focus {
 }
 
 .nav {
-    height: 100px;
+    height: 40px;
     width: 100%;
     min-width: 1200px;
-    background-color: #87969f;
-    .nav-left {
-        float: left;
+    background: #fafbfc;
+    border-bottom: 1px solid #c1242b;
+    h1 {
         margin: 0;
-        padding: 20px 0;
-        margin-left: 100px;
-        img{
-            vertical-align: middle;
+        float: left;
+    }
+    .change-lang{
+        float: right;
+        display: block;
+        line-height: 40px;
+        font-size: 12px;        
+        a{
+            text-decoration: none;
+            letter-spacing: 1px;
         }
     }
-    .nav-right {
-        list-style: none;
-        float: right;
-        font-size: 0;
-        padding: 20px 100px;
-        li {
+    img {
+        vertical-align: middle;
+        height: 35px;
+    }
+}
+
+
+.banner {
+    /*padding: 10px 0;*/
+    /*background-color: #d2dede;*/
+    width: 100%;
+    min-width: 1200px;
+    text-align: center;
+    img {
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+
+.nav-second {
+    list-style: none;
+    font-size: 0;
+    padding-left: 0;
+    background-color: #4f83aa;
+    .second-wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    li {
+        display: inline-block;
+        a {
             display: inline-block;
-            a {
-                display: inline-block;
-                font-size: 14px;
-                text-align: center;
-                line-height: 60px;
+            font-size: 16px;
+            font-family: "Microsoft YaHei";
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            padding: 0 50px;
+            border-radius: 2px;
+            text-decoration: none;
+            img {
+                width: 30px;
+                vertical-align: middle;
+            }
+            &:hover {
                 color: #fff;
-                padding: 0 30px;
-                margin: 0 12.5px;
-                border-radius: 2px;
-                text-decoration: none;
-                img {
-                    width: 50px;
-                    vertical-align: middle;
-                }
+            }
+            &.nav-item {
+                /*background-color: #bec6ca;*/
+                /*-webkit-box-shadow: 0 1px 0px 0px #222;*/
+                /*box-shadow: 0 1px 0px 0px #222;*/
                 &:hover {
-                    color: #bec6ca;
-                }
-                &.nav-item {
-                    background-color: #bec6ca;
-                    -webkit-box-shadow: 0 1px 0px 0px #222;
-                            box-shadow: 0 1px 0px 0px #222;
-                    &:hover {
-                        background-color: #fff;
-                    }
+                    background-color: #245f8a;
                 }
             }
-            &:nth-child(1) {
-                a {
-                    padding: 0 20px;
-                    margin: 0;
-                }
+        }
+        &:nth-child(1) {
+            a {
+                padding: 0 20px;
+                margin: 0;
             }
         }
     }
@@ -756,13 +913,16 @@ a:focus {
 
 
 
+
+
+
 /*模态框重构*/
 
 .modal {
     .modal-dialog {
         width: 1120px;
         -webkit-box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.10);
-                box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.10);
+        box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.10);
         border-radius: 4px;
         margin: 0 auto;
         top: 100px;
