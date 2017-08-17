@@ -7,3 +7,4 @@ from gxu.models import Video
 admin.site.register(Article)
 admin.site.register(Music)
 admin.site.register(Video)
+
