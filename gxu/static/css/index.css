@@ -3,7 +3,7 @@
   margin: 0 auto; }
   .wrapper .hot-ar .title-top {
     text-align: center;
-    padding: 70px 0 30px;
+    padding: 70px 120px 30px;
     font-size: 40px;
     margin: 0; }
     .wrapper .hot-ar .title-top a {
@@ -14,6 +14,7 @@
   .wrapper .hot-ar .title-second {
     text-align: center;
     margin: 0;
+    padding: 0 120px;
     font-size: 24px; }
     .wrapper .hot-ar .title-second a {
       color: #222;
@@ -21,63 +22,141 @@
       .wrapper .hot-ar .title-second a:hover {
         color: #666; }
 .wrapper .main-content {
-  background-image: url(../images/content-bg.png);
+  /*background-image: url(../images/content-bg.png);*/
+  background-color: #fcf6eb;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding-top: 80px; }
+  padding-top: 60px; }
 .wrapper .first {
-  margin-top: 160px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-  .wrapper .first .row-item {
-    width: 420px; }
-    .wrapper .first .row-item .item-title {
-      margin-bottom: 40px;
-      margin-left: 40px; }
-      .wrapper .first .row-item .item-title img {
-        width: 300px; }
-    .wrapper .first .row-item .content {
-      border: 5px solid #92b7d0;
+  height: 330px;
+  margin-bottom: 50px; }
+  .wrapper .first .slider {
+    width: 500px;
+    height: 330px;
+    float: left;
+    overflow: hidden;
+    position: relative; }
+    .wrapper .first .slider ul {
+      margin: 0;
+      padding: 0; }
+    .wrapper .first .slider .slider-wrapper {
+      overflow: auto;
+      height: 330px;
+      list-style: none;
+      position: relative; }
+      .wrapper .first .slider .slider-wrapper .slider-item {
+        float: left;
+        width: 500px;
+        height: 330px;
+        overflow: hidden;
+        position: absolute;
+        opacity: 0;
+        transition: all 1s; }
+        .wrapper .first .slider .slider-wrapper .slider-item.active {
+          opacity: 1; }
+        .wrapper .first .slider .slider-wrapper .slider-item a {
+          display: block; }
+        .wrapper .first .slider .slider-wrapper .slider-item img {
+          width: 100%;
+          height: 330px;
+          vertical-align: middle; }
+        .wrapper .first .slider .slider-wrapper .slider-item .title {
+          background-color: rgba(0, 0, 0, 0.6);
+          color: #fff;
+          overflow: auto;
+          position: absolute;
+          width: 500px;
+          bottom: 0;
+          height: 40px; }
+          .wrapper .first .slider .slider-wrapper .slider-item .title span {
+            float: left;
+            line-height: 40px;
+            text-indent: 1em;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 350px; }
+    .wrapper .first .slider .in-tro {
+      list-style: none;
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      line-height: 34px; }
+      .wrapper .first .slider .in-tro li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 1px 1px; }
+        .wrapper .first .slider .in-tro li.active {
+          background-color: #bf1e1e; }
+  .wrapper .first .article {
+    width: 680px;
+    height: 330px;
+    float: right; }
+    .wrapper .first .article .item-title img {
+      width: 220px; }
+    .wrapper .first .article .content {
       padding: 10px 15px;
       height: 200px;
-      border-radius: 5px; }
-      .wrapper .first .row-item .content .content-target {
-        color: #92b7d0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      /*border-radius: 5px;*/ }
+      .wrapper .first .article .content li {
+        background: url(http://www.mofcom.gov.cn/images/index_img/ico_08.png) no-repeat scroll 3px 8px;
+        padding-left: 12px; }
+      .wrapper .first .article .content .content-target {
+        color: #222;
         text-decoration: none;
-        font-size: 16px; }
-        .wrapper .first .row-item .content .content-target:hover {
+        font-size: 16px;
+        line-height: 24px;
+        display: block; }
+        .wrapper .first .article .content .content-target:hover {
           text-decoration: underline; }
-      .wrapper .first .row-item .content p {
+      .wrapper .first .article .content p {
         font-size: 14px;
         margin: 10px 0; }
-    .wrapper .first .row-item.culture h3 {
-      color: #92b7d0;
-      font-size: 16px;
-      font-weight: normal; }
-    .wrapper .first .row-item.culture a {
-      display: block;
-      text-decoration: none;
-      font-size: 14px;
-      color: #222; }
-      .wrapper .first .row-item.culture a:hover {
-        text-decoration: underline; }
-  .wrapper .first .square {
-    text-align: center;
-    margin-top: -20px; }
-    .wrapper .first .square img {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border: 5px solid #d3c7b9; }
-    .wrapper .first .square p {
-      width: 210px;
-      display: inline-block; }
+.wrapper .culture .culture-main .item-title img {
+  width: 220px; }
+.wrapper .culture .culture-main .content-item {
+  width: 300px;
+  margin: 0 10px;
+  float: left; }
+  .wrapper .culture .culture-main .content-item h3 {
+    border-bottom: 1px dotted #222;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 20px; }
+  .wrapper .culture .culture-main .content-item ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .wrapper .culture .culture-main .content-item ul li {
+      background: url(http://www.mofcom.gov.cn/images/index_img/ico_08.png) no-repeat scroll 3px 8px;
+      padding-left: 12px; }
+      .wrapper .culture .culture-main .content-item ul li a {
+        color: #222;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 24px;
+        display: block; }
+        .wrapper .culture .culture-main .content-item ul li a:hover {
+          text-decoration: underline; }
+.wrapper .culture .square {
+  text-align: center;
+  width: 500px;
+  float: left; }
+  .wrapper .culture .square img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #d3c7b9; }
+  .wrapper .culture .square p {
+    padding: 0 20px; }
 .wrapper .second {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 80px; }
   .wrapper .second > .title {
     width: 100%;
@@ -85,9 +164,9 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
     .wrapper .second > .title img {
-      width: 300px; }
+      width: 220px; }
   .wrapper .second .item-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -99,17 +178,18 @@
   .wrapper .second .item {
     width: 500px;
     border: 5px solid #92b7d0;
-    margin: 30px 0; }
+    margin: 30px 0;
+    padding: 15px; }
     .wrapper .second .item .item-left {
       float: left;
       width: 150px;
       height: 150px;
-      margin: 15px; }
+      margin-right: 15px; }
       .wrapper .second .item .item-left img {
         width: 100%;
         height: 100%; }
     .wrapper .second .item .item-right a {
-      color: #92b7d0;
+      color: #006dbf;
       text-decoration: none; }
       .wrapper .second .item .item-right a:hover {
         text-decoration: underline; }

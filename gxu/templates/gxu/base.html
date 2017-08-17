@@ -21,7 +21,7 @@
         <img src="/static/images/banner1.png" alt=""> {% else %}
         <img src="/static/images/banner-policy.png" alt=""> {% endif %}
     </div>
-    <ul class="nav-second clearfix" style="background-color: #4f83aa;">
+    <ul class="nav-second clearfix">
         <div class="second-wrapper">
             <li><a href="{% url 'index' %}" class="nav-item"><img src="/static/images/home-icon.png" alt=""></a></li>
             <li><a href="{% url 'article_list' 1 %}" class="nav-item {% if nav_page %}nav-checked{% endif %}">政策</a></li>

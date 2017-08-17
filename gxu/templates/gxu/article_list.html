@@ -39,12 +39,12 @@
             <p>采用乌比斯带原型作为logo的设计初级想法，由于乌比斯带特殊的单侧曲面，因此其没有起点也没有终点，终点及起点的思路，表达了我们团队坚持努力达到顶峰的信念，同时也意味着回到起点继续深化自己能力，创造出更好的网页！</p>
         </div>
         {% else %}
-        <div class="content">
+        <ul class="content">
             {% for ar in article %}
-            <a href="{% url 'article_detail' ar.id %}">{{ar.title}}</a>
+            <li><a href="{% url 'article_detail' ar.id %}">{{ar.title}}</a></li>
             <p class="info">{{ar.introduction}}...</p>
             {% endfor %}
-        </div>
+        </ul>
         {% endif %}
     </div>
 </div>

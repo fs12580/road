@@ -1,43 +1,67 @@
 {% extends 'gxu/base.html' %} {% block title %} - 首页{% endblock %} {% block css %}
 <link rel="stylesheet" href="/static/css/index.css">
 <style>
-    body{
-        background-color: #f5f4e9;
-    }
+body {
+    background-color: #f5f4e9;
+}
 </style>
 {% endblock %} {% block main %}
-
 <div class="wrapper">
     <div class="hot-ar">
-        <p class="title-top"><a href="">八桂儿女贯彻习近平总书记视察广西重要指示精神：敢为人先打造海上丝路大通道</a></p>
-        <p class="title-second"><a href="">八桂儿女贯彻习近平总书记视察广西重要指示精神：敢为人先打造海上丝路大通道</a></p>
+        <p class="title-top"><a href="">{{policy|first}}</a></p>
+        <p class="title-second"><a href="">{{information|first}}</a></p>
     </div>
     <div class="container main-content">
-        <div class="row first">
-            <div class="row-item policy">
+        <div class="row first clearfix">
+            <div class="slider">
+                <ul class="slider-wrapper">
+                    {% for i in information %}
+                    <li class="slider-item">
+                        <a href="{% url 'article_detail' i.id %}"><img src="{{i.headimg}}" alt=""></a>
+                        <div class="title">
+                            <span>{{i.title}}</span>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <ul class="in-tro">
+                {% for i in information %}
+                    <li></li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div class="article">
                 <div class="item-title"><img src="/static/images/policy.png" alt=""></div>
-                <div class="content">
+                <ul class="content">
                     {% for i in policy %}
-                    <a href="{% url 'article_detail' i.id %}" class="content-target">{{i.title}}</a>
-                    <p>{{i.introduction}}...</p>
+                    <li><a href="{% url 'article_detail' i.id %}" class="content-target">{{i.title}}</a></li>
+                    <!-- <p>{{i.introduction}}...</p> -->
                     {% endfor %}
-                </div>
+                </ul>
             </div>
-            <div class="square">
-                <img src="/static/images/tu2.jpg" alt="">
-                <p>广西北海铁山港码头、金海湾红树林生态保护区美丽景观</p>
-            </div>
-            <div class="row-item culture">
+        </div>
+        <div class="culture clearfix">
+            <div class="culture-main">
                 <div class="item-title"><img src="/static/images/culture.png" alt=""></div>
-                <div class="content">
-                    <h3>歌曲</h3>
-                    {% for m in music %}
-                    <a href="{% url 'music' m.id %}">{{m.name}}</a>
-                    {% endfor %}
-                    <h3>视频</h3>
-                    {% for v in video %}
-                    <a href="{% url 'video' v.id %}">{{v.name}}</a>
-                    {% endfor %}
+                <div class="content clearfix">
+                    <div class="content-item">
+                        <h3>歌曲</h3>
+                        <ul>
+                            {% for m in music %}
+                            <li><a href="{% url 'music' m.id %}">{{m.name}}</a></li> {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="square">
+                        <img src="/static/images/tu2.jpg" alt="">
+                        <p>广西北海铁山港码头、金海湾红树林生态保护区美丽景观</p>
+                    </div>
+                    <div class="content-item">
+                        <h3>视频</h3>
+                        <ul>
+                            {% for v in video %}
+                            <li><a href="{% url 'video' v.id %}">{{v.name}}</a> </li>{% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

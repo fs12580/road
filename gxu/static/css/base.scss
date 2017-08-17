@@ -813,7 +813,7 @@ a:focus {
     width: 100%;
     min-width: 1200px;
     background: #fafbfc;
-    border-bottom: 1px solid #c1242b;
+    border-bottom: 1px solid #245f8a;
     h1 {
         margin: 0;
         float: left;
@@ -842,7 +842,7 @@ a:focus {
     min-width: 1200px;
     text-align: center;
     img {
-        max-width: 100%;
+        width: 100%;
         vertical-align: middle;
     }
 }
@@ -851,9 +851,9 @@ a:focus {
     list-style: none;
     font-size: 0;
     padding-left: 0;
-    background-color: #4f83aa;
+    background-color: #1d76b9;
     .second-wrapper {
-        width: 1200px;
+        width: 700px;
         margin: 0 auto;
     }
     li {
@@ -900,13 +900,14 @@ a:focus {
 .footer {
     width: 100%;
     min-width: 1200px;
-    height: 150px;
-    background-color: #4f83aa;
-    padding-top: 100px;
+    height: 100px;
+    background-color: #1d76b9;
+    padding: 50px 0 20px 0;
     p {
         text-align: center;
         color: #fff;
         line-height: 2;
+        margin: 0;
     }
 }
 

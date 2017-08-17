@@ -11,9 +11,8 @@ from django.http import Http404
 def index(request):
     list = ['政策', '资讯', '文化']
     data = {
-        'policy': Article.objects.filter(category=list[0])[0:2],
-        'information': Article.objects.filter(category=list[1]),
-        'culture': Article.objects.filter(category=list[2])[0:4],
+        'policy': Article.objects.filter(category=list[0])[0:6],
+        'information': Article.objects.filter(category=list[1])[0:6],
         'music': Music.objects.all()[0:3],
         'video': Video.objects.all()[0:3],
         'page': 'index'
@@ -54,7 +53,13 @@ def article_detail(request, id):
         post = Article.objects.get(id=str(id))
     except Article.DoesNotExist:
         raise Http404
-    return render(request, 'gxu/article_detail.html', {'post': post})
+    data = {
+        'post': post,
+        'zhengce': Article.objects.filter(category='政策'),
+        'zixun': Article.objects.filter(category='资讯')
+
+    }
+    return render(request, 'gxu/article_detail.html', data)
 
 
 def music(request, id):
@@ -62,6 +67,7 @@ def music(request, id):
         data = {
             'post': Music.objects.get(id=str(id)),
             'index': 'culture',
+            'music': Music.objects.all(),
             'culture': 'music'
 
         }
@@ -75,7 +81,8 @@ def video(request, id):
         data = {
             'post': Video.objects.get(id=str(id)),
             'index': 'culture',
-            'culture': 'video'
+            'culture': 'video',
+            'video': Video.objects.all()
 
         }
     except Video.DoesNotExist:

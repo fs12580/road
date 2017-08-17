@@ -21,7 +21,7 @@ body {
     .title {
         margin-bottom: 40px;
         img {
-            width: 300px;
+            width: 220px;
         }
     }
     .container {
@@ -29,14 +29,22 @@ body {
         background-repeat: no-repeat;
         min-height: 600px;
         background-position: 0 15px;
-        .content {
+        >.content {
+            padding: 0;
+            margin: 0;
             padding-left: 50px;
-            >a {
-                color: #3259c7;
-                text-decoration: none;
-                font-size: 16px;
-                &:hover {
-                    text-decoration: underline;
+            list-style: none;
+            li {
+                background: url(http://www.mofcom.gov.cn/images/index_img/ico_08.png) no-repeat scroll 3px 5px;
+                line-height: 20px;
+                padding-left: 12px;
+                >a {
+                    color: #3259c7;
+                    text-decoration: none;
+                    font-size: 16px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -52,6 +60,8 @@ body {
                 padding: 0;
                 margin-bottom: 100px;
                 li {
+                    background: url(http://www.mofcom.gov.cn/images/index_img/ico_08.png) no-repeat scroll 3px 8px;
+                    padding-left: 12px;
                     a {
                         text-decoration: none;
                         line-height: 20px;
@@ -68,6 +78,7 @@ body {
                     float: left;
                     width: 25%;
                     text-align: center;
+                    background-image: none;
                     img {
                         width: 200px;
                         height: 150px;
@@ -103,15 +114,19 @@ body {
     .title {
         margin-bottom: 40px;
         img {
-            width: 300px;
+            width: 220px;
         }
     }
     .content {
         min-height: 600px;
         border: 1px solid #ccc;
-        -webkit-box-shadow: 1px 1px 1px 3px #eee;
-                box-shadow: 1px 1px 1px 3px #eee;
-        border-radius: 10px;
+        border-top: 2px solid #3259c7;
+        width: 800px;
+        float: left;
+        /*border: 1px solid #ccc;*/
+        /*-webkit-box-shadow: 1px 1px 1px 3px #eee;*/
+        /*box-shadow: 1px 1px 1px 3px #eee;*/
+        /*border-radius: 10px;*/
         padding: 20px 40px;
         background-color: rgba(241, 244, 242, .5);
         .content-title {
@@ -120,9 +135,46 @@ body {
             margin: 0;
             margin-bottom: 20px;
             color: #7a95e7;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #cfcfcf;
         }
         .content-main {
             font-size: 14px;
+        }
+    }
+    .relative {
+        width: 280px;
+        float: right;
+        background-color: rgba(241, 244, 242, .5);
+        border: 1px solid #ccc;
+        border-top: 2px solid #3259c7;
+        padding: 10px;
+        min-height: 200px;
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+        }
+        ul {
+            list-style: square;
+            padding: 0;
+            li {
+                padding: 2px 0;
+                padding-left: 14px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                background: url(http://www.mofcom.gov.cn/images/index_img/ico_08.png) no-repeat scroll 3px 8px;
+                a {
+                    text-decoration: none;
+                    color: #222;
+                    font-size: 14px;
+                    font-family: "宋体";
+                    &:hover {
+                        color: #3259c7;
+                    }
+                }
+            }
         }
     }
 }

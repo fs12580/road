@@ -438,7 +438,7 @@ a:focus {
   width: 100%;
   min-width: 1200px;
   background: #fafbfc;
-  border-bottom: 1px solid #c1242b; }
+  border-bottom: 1px solid #245f8a; }
   .nav h1 {
     margin: 0;
     float: left; }
@@ -461,16 +461,16 @@ a:focus {
   min-width: 1200px;
   text-align: center; }
   .banner img {
-    max-width: 100%;
+    width: 100%;
     vertical-align: middle; }
 
 .nav-second {
   list-style: none;
   font-size: 0;
   padding-left: 0;
-  background-color: #4f83aa; }
+  background-color: #1d76b9; }
   .nav-second .second-wrapper {
-    width: 1200px;
+    width: 700px;
     margin: 0 auto; }
   .nav-second li {
     display: inline-block; }
@@ -505,13 +505,14 @@ a:focus {
 .footer {
   width: 100%;
   min-width: 1200px;
-  height: 150px;
-  background-color: #4f83aa;
-  padding-top: 100px; }
+  height: 100px;
+  background-color: #1d76b9;
+  padding: 50px 0 20px 0; }
   .footer p {
     text-align: center;
     color: #fff;
-    line-height: 2; }
+    line-height: 2;
+    margin: 0; }
 
 /*模态框重构*/
 .modal .modal-dialog {
