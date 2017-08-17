@@ -11,19 +11,29 @@
 
 <body>
     <div class="nav">
-        <!-- <h1 class="nav-left clearfix"><a href=""><img src="/static/images/logo@2x.png" alt="Panda-logo" class="img-responsive"></a></h1> -->
-        <ul class="nav-right clearfix">
-            <li><a href="{% url 'index' %}" class=""><img src="" alt="">主页</a></li>
+        <div class="container">
+            <h1><a href="/index/"><img src="/static/images/logo.png" alt="logo" class="img-responsive"></a></h1>
+            <span class="change-lang"><a href="">中/En</a></span>
+        </div>
+    </div>
+    <div class="banner" style="background-color: #aecbdc;">
+        {% if page == 'index' %}
+        <img src="/static/images/banner1.png" alt=""> {% else %}
+        <img src="/static/images/banner-policy.png" alt=""> {% endif %}
+    </div>
+    <ul class="nav-second clearfix" style="background-color: #4f83aa;">
+        <div class="second-wrapper">
+            <li><a href="{% url 'index' %}" class="nav-item"><img src="/static/images/home-icon.png" alt=""></a></li>
             <li><a href="{% url 'article_list' 1 %}" class="nav-item {% if nav_page %}nav-checked{% endif %}">政策</a></li>
             <li><a href="{% url 'article_list' 2 %}" class="nav-item {% if nav_page %}nav-checked{% endif %}">资讯</a></li>
             <li><a href="{% url 'article_list' 3 %}" class="nav-item {% if nav_page %}nav-checked{% endif %}">文化</a></li>
             <li><a href="{% url 'article_list' 4 %}" class="nav-item {% if nav_page %}nav-checked{% endif %}">我们</a></li>
-            <li><a href="">中/En</a></li>
-        </ul>
-    </div>
+        </div>
+    </ul>
     {% block main %} {% endblock %}
     <div class="footer">
-        <p>第十一届广西高校计算机应用大赛<br>Copyright © 2017 郑王莫莫小组 All Rights Reserved</p>        
+        <p>第十一届广西高校计算机应用大赛
+            <br>Copyright © 2017 扬帆SailinG小组 All Rights Reserved</p>
     </div>
     <script src="/static/js/jquery-1.12.4.min.js"></script>
     <script src="/static/js/base.js"></script>

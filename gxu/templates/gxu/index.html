@@ -1,13 +1,18 @@
 {% extends 'gxu/base.html' %} {% block title %} - 首页{% endblock %} {% block css %}
-<link rel="stylesheet" href="/static/css/index.css"> {% endblock %} {% block main %}
-<div class="banner">
-    <div class="banner-main">
-        <img src="/static/images/banner1.png" alt="">
-    </div>
-</div>
+<link rel="stylesheet" href="/static/css/index.css">
+<style>
+    body{
+        background-color: #f5f4e9;
+    }
+</style>
+{% endblock %} {% block main %}
+
 <div class="wrapper">
-    <div class="container">
-        <p class="title">八桂儿女贯彻习近平总书记视察广西重要指示精神：敢为人先打造海上丝路大通道</p>
+    <div class="hot-ar">
+        <p class="title-top"><a href="">八桂儿女贯彻习近平总书记视察广西重要指示精神：敢为人先打造海上丝路大通道</a></p>
+        <p class="title-second"><a href="">八桂儿女贯彻习近平总书记视察广西重要指示精神：敢为人先打造海上丝路大通道</a></p>
+    </div>
+    <div class="container main-content">
         <div class="row first">
             <div class="row-item policy">
                 <div class="item-title"><img src="/static/images/policy.png" alt=""></div>
@@ -26,13 +31,13 @@
                 <div class="item-title"><img src="/static/images/culture.png" alt=""></div>
                 <div class="content">
                     <h3>歌曲</h3>
-                    <a href="">吴碧霞 - 风生水起北部湾</a>
-                    <a href="">吴碧霞 - 风生水起北部湾</a>
-                    <a href="">吴碧霞 - 风生水起北部湾</a>
+                    {% for m in music %}
+                    <a href="{% url 'music' m.id %}">{{m.name}}</a>
+                    {% endfor %}
                     <h3>视频</h3>
-                    <a href="">“一带一路”奇幻之路</a>
-                    <a href="">“一带一路”奇幻之路</a>
-                    <a href="">“一带一路”奇幻之路</a>
+                    {% for v in video %}
+                    <a href="{% url 'video' v.id %}">{{v.name}}</a>
+                    {% endfor %}
                 </div>
             </div>
         </div>

@@ -1,10 +1,5 @@
 {% extends 'gxu/base.html' %} {% block title %} - 政策{% endblock %} {% block css %}
 <link rel="stylesheet" href="/static/css/article.css"> {% endblock %} {% block main %}
-<div class="banner">
-    <div class="banner-main">
-        <img src="/static/images/banner-policy.png" alt="">
-    </div>
-</div>
 <div class="wrapper">
     <div class="container">
         <p class="title">
@@ -15,15 +10,42 @@
         {% elif index == 'culture' %}
             <img src="/static/images/culture.png" alt="">
         {% else %}
-            <img src="/static/images/ours.png" alt="">
+            <img src="/static/images/we.png" alt="">
         {%  endif %}
         </p>
+        {% if index == 'culture' %}
+        <div class="culture-content">
+            <div class="content-title">歌曲</div>
+            <ul>
+                {% for m in music %}
+                <li><a href="{% url 'music' m.id %}">{{m.name}}</a></li>
+                {% endfor %}
+            </ul>
+            <div class="content-title">视频</div>
+            <ul class="video">
+                {% for v in video %}
+                <li>
+                    <p class="video-title">{{v.name}}</p>
+                    <a href="{% url 'video' v.id %}"><img src="{{v.headimg}}" alt=""></a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% elif index == 'we' %}
+        <div class="we-content">
+            <h3><span>团队名称：</span>扬帆SailinG</h3>
+            <h3><span>团队成员介绍：</span>莫佳钰 王子杨 郑相翎 莫聪灵</h3>
+            <h3><span>LOGO设计理念：</span></h3>
+            <p>采用乌比斯带原型作为logo的设计初级想法，由于乌比斯带特殊的单侧曲面，因此其没有起点也没有终点，终点及起点的思路，表达了我们团队坚持努力达到顶峰的信念，同时也意味着回到起点继续深化自己能力，创造出更好的网页！</p>
+        </div>
+        {% else %}
         <div class="content">
             {% for ar in article %}
             <a href="{% url 'article_detail' ar.id %}">{{ar.title}}</a>
             <p class="info">{{ar.introduction}}...</p>
             {% endfor %}
         </div>
+        {% endif %}
     </div>
 </div>
 {% endblock %}

@@ -1,31 +1,46 @@
-.banner {
-    background-color: #d2dede;
-    width: 100%;
-    min-width: 1200px;
-    text-align: center;
-    padding: 50px 0;
-    img {
-        border: 5px solid #f8f3e8;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-}
-
 .wrapper {
-    background-image: url(../images/content-bg.png);
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding-top: 80px;
-    .title {
-        text-align: center;
-        margin: 0;
-        font-size: 24px;
+    .hot-ar {
+        width: 1200px;
+        margin: 0 auto;
+        .title-top {
+            text-align: center;
+            padding: 70px 0 30px;
+            font-size: 40px;
+            margin: 0;
+            a {
+                color: #222;
+                text-decoration: none;
+                &:hover{
+                    color: #666;
+                }
+            }
+        }
+        .title-second {
+            text-align: center;
+            margin: 0;
+            font-size: 24px;
+            a {
+                color: #222;
+                text-decoration: none;
+                &:hover{
+                    color: #666;
+                }
+            }
+        }
     }
-
+    .main-content {
+        background-image: url(../images/content-bg.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding-top: 80px;
+    }
     .first {
-        margin-top: 240px;
+        margin-top: 160px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         .row-item {
             width: 420px;
@@ -56,20 +71,20 @@
             }
             &.policy {}
             &.culture {
-            	h3{
-            		color: #92b7d0;
+                h3 {
+                    color: #92b7d0;
                     font-size: 16px;
                     font-weight: normal;
-            	}
-            	a{
-            		display: block;
-            		text-decoration: none;
-            		font-size: 14px;
-            		color: #222;
-            		&:hover{
-            			text-decoration: underline;
-            		}
-            	}
+                }
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #222;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
         .square {
@@ -93,6 +108,8 @@
         >.title {
             width: 100%;
             text-align: center;
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
             flex: 1;
             margin-bottom: 40px;
             img {
@@ -100,8 +117,12 @@
             }
         }
         .item-wrapper {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -ms-flex-pack: distribute;
             justify-content: space-around;
+            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         }
         .item {
