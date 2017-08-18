@@ -64,7 +64,7 @@ body {
                     padding-left: 12px;
                     a {
                         text-decoration: none;
-                        line-height: 20px;
+                        line-height: 26px;
                         color: #222;
                         &:hover {
                             text-decoration: underline;
@@ -104,6 +104,7 @@ body {
         .info {
             margin-top: 10px;
             margin-bottom: 20px;
+            font-size: 14px;
         }
     }
 }

@@ -53,7 +53,7 @@ body {
           padding-left: 12px; }
           .wrapper .container .culture-content ul li a {
             text-decoration: none;
-            line-height: 20px;
+            line-height: 26px;
             color: #222; }
             .wrapper .container .culture-content ul li a:hover {
               text-decoration: underline; }
@@ -80,7 +80,8 @@ body {
           margin: 0; }
     .wrapper .container .info {
       margin-top: 10px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-size: 14px; }
 
 .detail-wrapper {
   padding-top: 40px;

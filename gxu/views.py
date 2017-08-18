@@ -11,7 +11,7 @@ from django.http import Http404
 def index(request):
     list = ['政策', '资讯', '文化']
     data = {
-        'policy': Article.objects.filter(category=list[0])[0:8],
+        'policy': Article.objects.filter(category=list[0])[0:13],
         'policy_first': Article.objects.filter(category=list[0])[0:1],
         'information': Article.objects.filter(category=list[1])[0:6],
         'information_first': Article.objects.filter(category=list[1])[0:1],
