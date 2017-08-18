@@ -28,11 +28,11 @@
   background-repeat: no-repeat;
   padding-top: 60px; }
 .wrapper .first {
-  height: 330px;
+  height: 400px;
   margin-bottom: 50px; }
   .wrapper .first .slider {
-    width: 500px;
-    height: 330px;
+    width: 700px;
+    height: 400px;
     float: left;
     overflow: hidden;
     position: relative; }
@@ -41,13 +41,13 @@
       padding: 0; }
     .wrapper .first .slider .slider-wrapper {
       overflow: auto;
-      height: 330px;
+      height: 400px;
       list-style: none;
       position: relative; }
       .wrapper .first .slider .slider-wrapper .slider-item {
         float: left;
-        width: 500px;
-        height: 330px;
+        width: 700px;
+        height: 400px;
         overflow: hidden;
         position: absolute;
         opacity: 0;
@@ -58,14 +58,14 @@
           display: block; }
         .wrapper .first .slider .slider-wrapper .slider-item img {
           width: 100%;
-          height: 330px;
+          height: 400px;
           vertical-align: middle; }
         .wrapper .first .slider .slider-wrapper .slider-item .title {
           background-color: rgba(0, 0, 0, 0.6);
           color: #fff;
           overflow: auto;
           position: absolute;
-          width: 500px;
+          width: 700px;
           bottom: 0;
           height: 40px; }
           .wrapper .first .slider .slider-wrapper .slider-item .title span {
@@ -75,7 +75,7 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
-            width: 350px; }
+            width: 550px; }
     .wrapper .first .slider .in-tro {
       list-style: none;
       position: absolute;
@@ -92,9 +92,10 @@
         .wrapper .first .slider .in-tro li.active {
           background-color: #bf1e1e; }
   .wrapper .first .article {
-    width: 680px;
-    height: 330px;
-    float: right; }
+    width: 480px;
+    height: 400px;
+    float: right;
+    margin-left: 20px; }
     .wrapper .first .article .item-title img {
       width: 220px; }
     .wrapper .first .article .content {
