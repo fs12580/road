@@ -156,6 +156,10 @@ body {
       margin-bottom: auto; }
       .wrapper .title img {
         width: 160px; }
+    .wrapper .container .culture-content {
+      padding-left: 25px; }
+      .wrapper .container .culture-content .video li {
+        width: 90%; }
 
   .detail-wrapper {
     padding-top: 10px;
@@ -171,14 +175,11 @@ body {
       float: none;
       min-height: 400px; }
       .detail-wrapper .content video {
-        max-width: 350px; }
+        max-width: 350px;
+        height: auto; }
     .detail-wrapper .relative {
       width: auto;
       margin-top: 10px;
-      float: none; }
-    .detail-wrapper .container .culture-content {
-      padding-left: 25px; }
-      .detail-wrapper .container .culture-content .video li {
-        width: 90%; } }
+      float: none; } }
 
 /*# sourceMappingURL=article.css.map */
