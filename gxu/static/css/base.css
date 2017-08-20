@@ -554,6 +554,11 @@ a:focus {
     .banner img {
       min-height: 150px; }
 
+  .nav .nav-second {
+    position: static;
+    margin: 0;
+    float: right; }
+
   .second-wrapper {
     width: 300px !important; }
     .second-wrapper li a {
