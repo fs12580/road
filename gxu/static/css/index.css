@@ -51,6 +51,7 @@
         overflow: hidden;
         position: absolute;
         opacity: 0;
+        -webkit-transition: all 1s;
         transition: all 1s; }
         .wrapper .first .slider .slider-wrapper .slider-item.active {
           opacity: 1; }
