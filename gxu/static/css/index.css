@@ -208,7 +208,8 @@
     float: none !important; }
     .first .slider {
       width: 100% !important;
-      height: 200px !important; }
+      height: 200px !important;
+      float: none !important; }
       .first .slider .slider-wrapper {
         height: 200px !important; }
         .first .slider .slider-wrapper .slider-item {
@@ -221,18 +222,28 @@
           height: 30px !important; }
           .first .slider .slider-item .title span {
             line-height: 30px !important;
-            width: 90% !important; }
+            max-width: 300px  !important; }
       .first .slider .in-tro {
         line-height: 30px !important; }
     .first .article {
       float: none !important;
-      width: auto !important; }
+      width: auto !important;
+      margin-left: 10px !important; }
 
   .wrapper .main-content {
     padding-top: 20px; }
+  .wrapper .hot-ar {
+    width: auto !important; }
+    .wrapper .hot-ar .title-top {
+      font-size: 20px;
+      padding: 20px 20px 10px !important; }
+    .wrapper .hot-ar .title-second {
+      font-size: 16px;
+      padding: 0 20px; }
 
   .culture .square {
-    width: auto !important; }
+    width: auto !important;
+    margin: 15px 0; }
 
   .second .item {
     margin: 2px 0 !important; } }

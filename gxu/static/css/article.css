@@ -143,6 +143,17 @@ body {
             color: #3259c7; }
 
 @media screen and (min-width: 425px) {
+  .wrapper {
+    padding-top: 10px;
+    padding-bottom: 20px; }
+    .wrapper .container > .content {
+      padding-left: 25px;
+      padding-right: 10px; }
+    .wrapper .title {
+      margin-bottom: auto; }
+      .wrapper .title img {
+        width: 160px; }
+
   .detail-wrapper {
     padding-top: 10px;
     padding-bottom: 20px; }

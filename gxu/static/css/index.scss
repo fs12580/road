@@ -270,6 +270,7 @@
         .slider {
             width: 100% !important;
             height: 200px !important;
+            float: none !important;
             .slider-wrapper {
                 height: 200px !important;
                 .slider-item {
@@ -285,7 +286,7 @@
                     height: 30px !important;
                     span {
                         line-height: 30px !important;
-                        width: 90% !important;
+                        max-width: 300px  !important;
                     }
                 }
             }
@@ -296,16 +297,29 @@
         .article {
             float: none !important;
             width: auto !important;
+            margin-left: 10px !important;
         }
     }
     .wrapper {
         .main-content {
             padding-top: 20px;
         }
+        .hot-ar {
+            width: auto !important;
+            .title-top {
+                font-size: 20px;
+                padding: 20px 20px 10px !important;
+            }
+            .title-second {
+                font-size: 16px;
+                padding: 0 20px;
+            }
+        }
     }
     .culture {
         .square {
             width: auto !important;
+            margin: 15px 0;
         }
     }
     .second {

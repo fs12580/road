@@ -181,24 +181,40 @@ body {
 }
 
 @media screen and (min-width: 425px) {
-    .detail-wrapper{
+    .wrapper {
         padding-top: 10px;
         padding-bottom: 20px;
+        .container {
+            >.content {
+                padding-left: 25px;
+                padding-right: 10px;
+            }
+        }
         .title{
-            margin-bottom: 20px;
+            margin-bottom: auto;
             img{
                 width: 160px;
             }
         }
-        .content{
+    }
+    .detail-wrapper {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        .title {
+            margin-bottom: 20px;
+            img {
+                width: 160px;
+            }
+        }
+        .content {
             width: auto;
             float: none;
             min-height: 400px;
         }
-        .relative{
-        width: auto;
-        margin-top: 10px;
-        float: none;
-    }
+        .relative {
+            width: auto;
+            margin-top: 10px;
+            float: none;
+        }
     }
 }
