@@ -180,6 +180,8 @@ body {
       .detail-wrapper .content video {
         max-width: 350px;
         height: auto; }
+      .detail-wrapper .content img {
+        max-width: 100%; }
     .detail-wrapper .relative {
       width: auto;
       margin-top: 10px;

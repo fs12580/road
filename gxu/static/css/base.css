@@ -566,26 +566,26 @@ a:focus {
   .nav {
     width: 100%;
     min-width: auto; }
+    .nav .nav-second {
+      width: 100%;
+      margin-left: 0; }
+      .nav .nav-second .second-wrapper {
+        width: 100%; }
+        .nav .nav-second .second-wrapper li a {
+          padding: 0 10px;
+          line-height: 35px;
+          font-size: 12px; }
+        .nav .nav-second .second-wrapper li:nth-child(1) img {
+          width: 20px;
+          padding: 0 10px; }
+    .nav .search {
+      float: none;
+      margin-left: 50px; }
 
   .banner {
     min-width: auto !important; }
     .banner img {
       min-height: 150px; }
-
-  .nav .nav-second {
-    position: static;
-    margin: 0;
-    float: right; }
-
-  .second-wrapper {
-    width: 300px !important; }
-    .second-wrapper li a {
-      padding: 0 10px !important;
-      line-height: 35px;
-      font-size: 12px; }
-    .second-wrapper li:nth-child(1) img {
-      width: 20px !important;
-      padding: 0 10px; }
 
   .footer {
     min-width: auto !important;
