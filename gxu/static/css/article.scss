@@ -118,6 +118,10 @@ body {
             width: 220px;
         }
     }
+    #skPlayer{
+        margin: 30px 0 80px;
+        width: 600px;
+    }
     .content {
         min-height: 600px;
         border: 1px solid #ccc;
@@ -200,6 +204,9 @@ body {
     .detail-wrapper {
         padding-top: 10px;
         padding-bottom: 20px;
+        #skPlayer{
+            width: auto;
+        }
         .title {
             margin-bottom: 20px;
             img {
@@ -210,11 +217,27 @@ body {
             width: auto;
             float: none;
             min-height: 400px;
+            video{
+                max-width: 350px;
+            }
         }
         .relative {
             width: auto;
             margin-top: 10px;
             float: none;
+        }
+        .container{
+            .culture-content{
+                padding-left: 25px;
+                .video{
+                    li{
+                        width: 90%;
+                    }
+                }
+                ul{
+
+                }
+            }
         }
     }
 }
