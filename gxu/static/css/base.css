@@ -446,14 +446,32 @@ a:focus {
     line-height: 50px; }
     .nav h1 img {
       height: 35px; }
+  .nav .search {
+    float: right;
+    line-height: 50px; }
+    .nav .search input {
+      line-height: 25px;
+      border-radius: 3px;
+      outline: none;
+      border: none;
+      border: 1px solid #245f8a;
+      font-size: 14px;
+      padding-left: 5px; }
+    .nav .search button {
+      background: #1d76b9;
+      color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+      line-height: 25px;
+      padding: 0 10px; }
   .nav .nav-second {
     list-style: none;
     font-size: 0;
     padding-left: 0;
     background-color: #1d76b9;
-    position: absolute;
-    left: 50%;
-    margin-left: -300px; }
+    float: left;
+    margin-left: 150px; }
     .nav .nav-second .second-wrapper {
       width: 600px;
       margin: 0 auto; }

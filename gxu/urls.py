@@ -9,4 +9,5 @@ urlpatterns = [
         name='article_list'),  # 政策
     url(r'^article_detail/(\d+)$', views.article_detail,
         name='article_detail'),  # 政策文章页
+    url(r'^search/$', views.search, name='search'),  # 搜索
 ]

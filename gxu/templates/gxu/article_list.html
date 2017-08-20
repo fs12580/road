@@ -9,6 +9,9 @@
             <img src="/static/images/news.png" alt="">
         {% elif index == 'culture' %}
             <img src="/static/images/culture.png" alt="">
+        {% elif index == 'search' %}
+        <h3>搜索</h3>
+        <p>搜索<span> “{{search_info}}” </span>结果共 {{article|length}} 条：</p>
         {% else %}
             <img src="/static/images/we.png" alt="">
         {%  endif %}
@@ -38,7 +41,7 @@
             <h3><span>LOGO设计理念：</span></h3>
             <p>采用乌比斯带原型作为logo的设计初级想法，由于乌比斯带特殊的单侧曲面，因此其没有起点也没有终点，终点及起点的思路，表达了我们团队坚持努力达到顶峰的信念，同时也意味着回到起点继续深化自己能力，创造出更好的网页！</p>
         </div>
-        {% else %}
+        {% else %} 
         <ul class="content">
             {% for ar in article %}
             <li><a href="{% url 'article_detail' ar.id %}">{{ar.title}}</a></li>

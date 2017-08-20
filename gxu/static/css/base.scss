@@ -13,6 +13,10 @@ html {
 
 
 
+
+
+
+
 /* Sections
    ========================================================================== */
 
@@ -24,12 +28,6 @@ html {
 body {
     margin: 0;
 }
-
-
-
-
-
-
 
 
 
@@ -52,12 +50,6 @@ section {
 
 
 
-
-
-
-
-
-
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -67,12 +59,6 @@ h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
-
-
-
-
-
-
 
 
 
@@ -98,12 +84,6 @@ main {
 
 
 
-
-
-
-
-
-
 /**
  * Add the correct margin in IE 8.
  */
@@ -111,12 +91,6 @@ main {
 figure {
     margin: 1em 40px;
 }
-
-
-
-
-
-
 
 
 
@@ -141,12 +115,6 @@ hr {
 
 
 
-
-
-
-
-
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -158,12 +126,6 @@ pre {
     font-size: 1em;
     /* 2 */
 }
-
-
-
-
-
-
 
 
 
@@ -189,12 +151,6 @@ a {
 
 
 
-
-
-
-
-
-
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -213,12 +169,6 @@ abbr[title] {
 
 
 
-
-
-
-
-
-
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
@@ -232,12 +182,6 @@ strong {
 
 
 
-
-
-
-
-
-
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
@@ -246,12 +190,6 @@ b,
 strong {
     font-weight: bolder;
 }
-
-
-
-
-
-
 
 
 
@@ -275,12 +213,6 @@ samp {
 
 
 
-
-
-
-
-
-
 /**
  * Add the correct font style in Android 4.3-.
  */
@@ -288,12 +220,6 @@ samp {
 dfn {
     font-style: italic;
 }
-
-
-
-
-
-
 
 
 
@@ -312,12 +238,6 @@ mark {
 
 
 
-
-
-
-
-
-
 /**
  * Add the correct font size in all browsers.
  */
@@ -325,12 +245,6 @@ mark {
 small {
     font-size: 80%;
 }
-
-
-
-
-
-
 
 
 
@@ -361,12 +275,6 @@ sup {
 
 
 
-
-
-
-
-
-
 /* Embedded content
    ========================================================================== */
 
@@ -379,12 +287,6 @@ audio,
 video {
     display: inline-block;
 }
-
-
-
-
-
-
 
 
 
@@ -403,12 +305,6 @@ audio:not([controls]) {
 
 
 
-
-
-
-
-
-
 /**
  * Remove the border on images inside links in IE 10-.
  */
@@ -421,12 +317,6 @@ img {
 
 
 
-
-
-
-
-
-
 /**
  * Hide the overflow in IE.
  */
@@ -434,12 +324,6 @@ img {
 svg:not(:root) {
     overflow: hidden;
 }
-
-
-
-
-
-
 
 
 
@@ -473,12 +357,6 @@ textarea {
 
 
 
-
-
-
-
-
-
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -489,12 +367,6 @@ input {
     /* 1 */
     overflow: visible;
 }
-
-
-
-
-
-
 
 
 
@@ -515,12 +387,6 @@ select {
 
 
 
-
-
-
-
-
-
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
  *    controls in Android 4.
@@ -532,13 +398,6 @@ html [type="button"],
 
 
 
-
-
-
-
-
-
-
 /* 1 */
 
 [type="reset"],
@@ -546,12 +405,6 @@ html [type="button"],
     -webkit-appearance: button;
     /* 2 */
 }
-
-
-
-
-
-
 
 
 
@@ -573,12 +426,6 @@ button::-moz-focus-inner,
 
 
 
-
-
-
-
-
-
 /**
  * Restore the focus styles unset by the previous rule.
  */
@@ -594,12 +441,6 @@ button:-moz-focusring,
 
 
 
-
-
-
-
-
-
 /**
  * Correct the padding in Firefox.
  */
@@ -607,12 +448,6 @@ button:-moz-focusring,
 fieldset {
     padding: 0.35em 0.75em 0.625em;
 }
-
-
-
-
-
-
 
 
 
@@ -645,12 +480,6 @@ legend {
 
 
 
-
-
-
-
-
-
 /**
  * 1. Add the correct display in IE 9-.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
@@ -667,12 +496,6 @@ progress {
 
 
 
-
-
-
-
-
-
 /**
  * Remove the default vertical scrollbar in IE.
  */
@@ -680,12 +503,6 @@ progress {
 textarea {
     overflow: auto;
 }
-
-
-
-
-
-
 
 
 
@@ -709,12 +526,6 @@ textarea {
 
 
 
-
-
-
-
-
-
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
@@ -723,12 +534,6 @@ textarea {
 [type="number"]::-webkit-outer-spin-button {
     height: auto;
 }
-
-
-
-
-
-
 
 
 
@@ -750,12 +555,6 @@ textarea {
 
 
 
-
-
-
-
-
-
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
@@ -764,12 +563,6 @@ textarea {
 [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
-
-
-
-
-
-
 
 
 
@@ -791,12 +584,6 @@ textarea {
 
 
 
-
-
-
-
-
-
 /* Interactive
    ========================================================================== */
 
@@ -810,24 +597,11 @@ details,
 
 
 
-
-
-
-
-
-
-
 /* 1 */
 
 menu {
     display: block;
 }
-
-
-
-
-
-
 
 
 
@@ -840,12 +614,6 @@ menu {
 summary {
     display: list-item;
 }
-
-
-
-
-
-
 
 
 
@@ -867,12 +635,6 @@ canvas {
 
 
 
-
-
-
-
-
-
 /**
  * Add the correct display in IE.
  */
@@ -880,12 +642,6 @@ canvas {
 template {
     display: none;
 }
-
-
-
-
-
-
 
 
 
@@ -910,12 +666,6 @@ body {
 a:focus {
     outline: none;
 }
-
-
-
-
-
-
 
 
 
@@ -989,14 +739,35 @@ a:focus {
             height: 35px;
         }
     }
+    .search {
+        float: right;
+        line-height: 50px;
+        input {
+            line-height: 25px;
+            border-radius: 3px;
+            outline: none;
+            border: none;
+            border: 1px solid #245f8a;
+            font-size: 14px;
+            padding-left: 5px;
+        }
+        button {
+            background: #1d76b9;
+            color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            line-height: 25px;
+            padding: 0 10px;
+        }
+    }
     .nav-second {
         list-style: none;
         font-size: 0;
         padding-left: 0;
         background-color: #1d76b9;
-        position: absolute;        
-        left: 50%;
-        margin-left: -300px;
+        float: left;
+        margin-left: 150px;
         .second-wrapper {
             width: 600px;
             margin: 0 auto;
@@ -1090,8 +861,6 @@ a:focus {
 
 
 
-
-
 /*模态框重构*/
 
 .modal {
@@ -1125,6 +894,10 @@ a:focus {
 
 
 
+
+
+
+
 /*响应式*/
 
 @media screen and (max-width: 425px) {
@@ -1141,8 +914,8 @@ a:focus {
             min-height: 150px;
         }
     }
-    .nav{
-        .nav-second{
+    .nav {
+        .nav-second {
             position: static;
             margin: 0;
             float: right;
@@ -1150,7 +923,6 @@ a:focus {
     }
     .second-wrapper {
         width: 300px !important;
-
         li {
             a {
                 padding: 0 10px !important;

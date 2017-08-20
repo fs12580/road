@@ -115,3 +115,22 @@ def information(request):
 # 资讯
 def ours(request):
     return render(request, 'gxu/ours.html')
+
+
+# 搜索
+def search(request):
+    q = request.GET.get('q')
+    data = {
+        'error_msg': '',
+        'article': '',
+        'index': 'search',
+        'search_info': q
+    }
+    post = Article.objects.filter()
+    if q:
+        post_list = post.filter(title__icontains=q)
+        data['article'] = post_list
+        return render(request, 'gxu/article_list.html', data)
+    else:
+        data['error_msg'] = '请输入关键词'
+        return render(request, 'gxu/article_list.html', data)

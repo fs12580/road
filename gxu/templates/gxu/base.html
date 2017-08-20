@@ -24,6 +24,12 @@
                     <li><a href="{% url 'article_list' 4 %}" class="nav-item {% if page == 'we' %}nav-checked{% endif %}">我们</a></li>
                 </div>
             </ul>
+            <div class="search">
+                <form method="get" action="/search/">
+                    <input name="q" type="search" placeholder="搜索文章" required>
+                    <button type="submit">搜索</button>
+                </form>
+            </div>
             <!-- <span class="change-lang"><a href="">中/En</a></span> -->
         </div>
     </div>
