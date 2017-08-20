@@ -579,8 +579,9 @@ a:focus {
           width: 20px;
           padding: 0 10px; }
     .nav .search {
-      float: none;
-      margin-left: 50px; }
+      width: 100%;
+      text-align: center;
+      line-height: 35px; }
 
   .banner {
     min-width: auto !important; }
