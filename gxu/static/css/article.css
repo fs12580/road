@@ -145,7 +145,7 @@ body {
           .detail-wrapper .relative ul li a:hover {
             color: #3259c7; }
 
-@media screen and (min-width: 425px) {
+@media screen and (max-width: 425px) {
   .wrapper {
     padding-top: 10px;
     padding-bottom: 20px; }
@@ -166,6 +166,9 @@ body {
     padding-bottom: 20px; }
     .detail-wrapper #skPlayer {
       width: auto; }
+      .detail-wrapper #skPlayer .skPlayer-btn {
+        -webkit-transform: translate(27%, -50%) translateZ(0);
+        transform: translate(27%, -50%) translateZ(0); }
     .detail-wrapper .title {
       margin-bottom: 20px; }
       .detail-wrapper .title img {

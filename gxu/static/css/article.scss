@@ -184,7 +184,7 @@ body {
     }
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (max-width: 425px) {
     .wrapper {
         padding-top: 10px;
         padding-bottom: 20px;
@@ -217,6 +217,10 @@ body {
         padding-bottom: 20px;
         #skPlayer {
             width: auto;
+            .skPlayer-btn {
+                -webkit-transform: translate(27%, -50%) translateZ(0);
+                        transform: translate(27%, -50%) translateZ(0);
+            }
         }
         .title {
             margin-bottom: 20px;

@@ -434,14 +434,57 @@ a:focus {
   padding: 0; }
 
 .nav {
-  height: 40px;
+  height: 50px;
   width: 100%;
   min-width: 1200px;
   background: #fafbfc;
-  border-bottom: 1px solid #245f8a; }
+  border-bottom: 4px solid #1d76b9;
+  position: relative; }
   .nav h1 {
     margin: 0;
-    float: left; }
+    float: left;
+    line-height: 50px; }
+    .nav h1 img {
+      height: 35px; }
+  .nav .nav-second {
+    list-style: none;
+    font-size: 0;
+    padding-left: 0;
+    background-color: #1d76b9;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px; }
+    .nav .nav-second .second-wrapper {
+      width: 600px;
+      margin: 0 auto; }
+    .nav .nav-second li {
+      display: inline-block; }
+      .nav .nav-second li a {
+        display: inline-block;
+        font-size: 16px;
+        font-family: "Microsoft YaHei";
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        padding: 0 50px;
+        border-radius: 2px;
+        text-decoration: none; }
+        .nav .nav-second li a img {
+          width: 30px;
+          vertical-align: middle; }
+        .nav .nav-second li a:hover {
+          color: #fff; }
+        .nav .nav-second li a.nav-item {
+          /*background-color: #bec6ca;*/
+          /*-webkit-box-shadow: 0 1px 0px 0px #222;*/
+          /*box-shadow: 0 1px 0px 0px #222;*/ }
+          .nav .nav-second li a.nav-item:hover {
+            background-color: #245f8a; }
+        .nav .nav-second li a.nav-checked {
+          background-color: #245f8a; }
+      .nav .nav-second li:nth-child(1) a {
+        padding: 0 20px;
+        margin: 0; }
   .nav .change-lang {
     float: right;
     display: block;
@@ -451,8 +494,7 @@ a:focus {
       text-decoration: none;
       letter-spacing: 1px; }
   .nav img {
-    vertical-align: middle;
-    height: 35px; }
+    vertical-align: middle; }
 
 .banner {
   /*padding: 10px 0;*/
@@ -463,43 +505,6 @@ a:focus {
   .banner img {
     width: 100%;
     vertical-align: middle; }
-
-.nav-second {
-  list-style: none;
-  font-size: 0;
-  padding-left: 0;
-  background-color: #1d76b9; }
-  .nav-second .second-wrapper {
-    width: 700px;
-    margin: 0 auto; }
-  .nav-second li {
-    display: inline-block; }
-    .nav-second li a {
-      display: inline-block;
-      font-size: 16px;
-      font-family: "Microsoft YaHei";
-      text-align: center;
-      line-height: 50px;
-      color: #fff;
-      padding: 0 50px;
-      border-radius: 2px;
-      text-decoration: none; }
-      .nav-second li a img {
-        width: 30px;
-        vertical-align: middle; }
-      .nav-second li a:hover {
-        color: #fff; }
-      .nav-second li a.nav-item {
-        /*background-color: #bec6ca;*/
-        /*-webkit-box-shadow: 0 1px 0px 0px #222;*/
-        /*box-shadow: 0 1px 0px 0px #222;*/ }
-        .nav-second li a.nav-item:hover {
-          background-color: #245f8a; }
-      .nav-second li a.nav-checked {
-        background-color: #245f8a; }
-    .nav-second li:nth-child(1) a {
-      padding: 0 20px;
-      margin: 0; }
 
 .footer {
   width: 100%;
