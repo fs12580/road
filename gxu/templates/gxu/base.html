@@ -4,14 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
     <title>沟通东盟海思路 风生水起北部湾{% block title %}{% endblock %}</title>
-    <link rel="shortcut icon" href="/static/images/favicon.png" />
+    <link rel="shortcut icon" href="/static/images/logo.png" />
     <link href="/static/css/base.css" rel="stylesheet"> {% block css %} {% endblock %}
 </head>
 
 <body>
     <div class="nav">
-        <div class="container">
+        <div class="container clearfix">
             <h1><a href="/index/"><img src="/static/images/logo.png" alt="logo" class="img-responsive"></a></h1>
             <span class="change-lang"><a href="">中/En</a></span>
         </div>
@@ -23,7 +25,7 @@
     </div>
     <ul class="nav-second clearfix">
         <div class="second-wrapper">
-            <li><a href="{% url 'index' %}" class="nav-item {% if page == 'index' %}nav-checked{% endif %}"><img src="/static/images/home-icon.png" alt=""></a></li>
+            <li><a href="{% url 'index' %}" class="nav-item"><img src="/static/images/home-icon.png" alt=""></a></li>
             <li><a href="{% url 'article_list' 1 %}" class="nav-item {% if page == 'policy' %}nav-checked{% endif %}">政策</a></li>
             <li><a href="{% url 'article_list' 2 %}" class="nav-item {% if page == 'information' %}nav-checked{% endif %}">资讯</a></li>
             <li><a href="{% url 'article_list' 3 %}" class="nav-item {% if page == 'culture' %}nav-checked{% endif %}">文化</a></li>

@@ -262,3 +262,55 @@
         }
     }
 }
+
+@media screen and (max-width: 425px) {
+    .first {
+        height: auto !important;
+        float: none !important;
+        .slider {
+            width: 100% !important;
+            height: 200px !important;
+            .slider-wrapper {
+                height: 200px !important;
+                .slider-item {
+                    height: 200px !important;
+                }
+                img {
+                    height: 170px;
+                }
+            }
+            .slider-item {
+                width: 100% !important;
+                .title {
+                    height: 30px !important;
+                    span {
+                        line-height: 30px !important;
+                        width: 90% !important;
+                    }
+                }
+            }
+            .in-tro {
+                line-height: 30px !important;
+            }
+        }
+        .article {
+            float: none !important;
+            width: auto !important;
+        }
+    }
+    .wrapper {
+        .main-content {
+            padding-top: 20px;
+        }
+    }
+    .culture {
+        .square {
+            width: auto !important;
+        }
+    }
+    .second {
+        .item {
+            margin: 2px 0 !important;
+        }
+    }
+}

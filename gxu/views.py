@@ -16,7 +16,8 @@ def index(request):
         'information': Article.objects.filter(category=list[1])[0:6],
         'information_first': Article.objects.filter(category=list[1])[0:1],
         'music': Music.objects.all()[0:8],
-        'video': Video.objects.all()[0:8]
+        'video': Video.objects.all()[0:8],
+        'page': 'index'
     }
     return render(request, 'gxu/index.html', data)
 

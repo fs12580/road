@@ -142,4 +142,21 @@ body {
           .detail-wrapper .relative ul li a:hover {
             color: #3259c7; }
 
+@media screen and (min-width: 425px) {
+  .detail-wrapper {
+    padding-top: 10px;
+    padding-bottom: 20px; }
+    .detail-wrapper .title {
+      margin-bottom: 20px; }
+      .detail-wrapper .title img {
+        width: 160px; }
+    .detail-wrapper .content {
+      width: auto;
+      float: none;
+      min-height: 400px; }
+    .detail-wrapper .relative {
+      width: auto;
+      margin-top: 10px;
+      float: none; } }
+
 /*# sourceMappingURL=article.css.map */

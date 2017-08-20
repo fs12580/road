@@ -11,10 +11,6 @@ html {
 
 
 
-
-
-
-
 /* Sections
    ========================================================================== */
 
@@ -26,6 +22,8 @@ html {
 body {
     margin: 0;
 }
+
+
 
 
 
@@ -52,6 +50,8 @@ section {
 
 
 
+
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -61,6 +61,8 @@ h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
+
+
 
 
 
@@ -90,6 +92,8 @@ main {
 
 
 
+
+
 /**
  * Add the correct margin in IE 8.
  */
@@ -97,6 +101,8 @@ main {
 figure {
     margin: 1em 40px;
 }
+
+
 
 
 
@@ -125,6 +131,8 @@ hr {
 
 
 
+
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -136,6 +144,8 @@ pre {
     font-size: 1em;
     /* 2 */
 }
+
+
 
 
 
@@ -165,6 +175,8 @@ a {
 
 
 
+
+
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -178,6 +190,8 @@ abbr[title] {
     text-decoration: underline dotted;
     /* 2 */
 }
+
+
 
 
 
@@ -200,6 +214,8 @@ strong {
 
 
 
+
+
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
@@ -208,6 +224,8 @@ b,
 strong {
     font-weight: bolder;
 }
+
+
 
 
 
@@ -235,6 +253,8 @@ samp {
 
 
 
+
+
 /**
  * Add the correct font style in Android 4.3-.
  */
@@ -242,6 +262,8 @@ samp {
 dfn {
     font-style: italic;
 }
+
+
 
 
 
@@ -264,6 +286,8 @@ mark {
 
 
 
+
+
 /**
  * Add the correct font size in all browsers.
  */
@@ -271,6 +295,8 @@ mark {
 small {
     font-size: 80%;
 }
+
+
 
 
 
@@ -305,6 +331,8 @@ sup {
 
 
 
+
+
 /* Embedded content
    ========================================================================== */
 
@@ -317,6 +345,8 @@ audio,
 video {
     display: inline-block;
 }
+
+
 
 
 
@@ -339,6 +369,8 @@ audio:not([controls]) {
 
 
 
+
+
 /**
  * Remove the border on images inside links in IE 10-.
  */
@@ -353,6 +385,8 @@ img {
 
 
 
+
+
 /**
  * Hide the overflow in IE.
  */
@@ -360,6 +394,8 @@ img {
 svg:not(:root) {
     overflow: hidden;
 }
+
+
 
 
 
@@ -397,6 +433,8 @@ textarea {
 
 
 
+
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -407,6 +445,8 @@ input {
     /* 1 */
     overflow: visible;
 }
+
+
 
 
 
@@ -431,6 +471,8 @@ select {
 
 
 
+
+
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
  *    controls in Android 4.
@@ -445,6 +487,8 @@ html [type="button"],
 
 
 
+
+
 /* 1 */
 
 [type="reset"],
@@ -452,6 +496,8 @@ html [type="button"],
     -webkit-appearance: button;
     /* 2 */
 }
+
+
 
 
 
@@ -477,6 +523,8 @@ button::-moz-focus-inner,
 
 
 
+
+
 /**
  * Restore the focus styles unset by the previous rule.
  */
@@ -494,6 +542,8 @@ button:-moz-focusring,
 
 
 
+
+
 /**
  * Correct the padding in Firefox.
  */
@@ -501,6 +551,8 @@ button:-moz-focusring,
 fieldset {
     padding: 0.35em 0.75em 0.625em;
 }
+
+
 
 
 
@@ -537,6 +589,8 @@ legend {
 
 
 
+
+
 /**
  * 1. Add the correct display in IE 9-.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
@@ -555,6 +609,8 @@ progress {
 
 
 
+
+
 /**
  * Remove the default vertical scrollbar in IE.
  */
@@ -562,6 +618,8 @@ progress {
 textarea {
     overflow: auto;
 }
+
+
 
 
 
@@ -589,6 +647,8 @@ textarea {
 
 
 
+
+
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
@@ -597,6 +657,8 @@ textarea {
 [type="number"]::-webkit-outer-spin-button {
     height: auto;
 }
+
+
 
 
 
@@ -622,6 +684,8 @@ textarea {
 
 
 
+
+
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
@@ -630,6 +694,8 @@ textarea {
 [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
+
+
 
 
 
@@ -655,6 +721,8 @@ textarea {
 
 
 
+
+
 /* Interactive
    ========================================================================== */
 
@@ -665,6 +733,8 @@ textarea {
  */
 
 details,
+
+
 
 
 
@@ -683,6 +753,8 @@ menu {
 
 
 
+
+
 /*
  * Add the correct display in all browsers.
  */
@@ -690,6 +762,8 @@ menu {
 summary {
     display: list-item;
 }
+
+
 
 
 
@@ -715,6 +789,8 @@ canvas {
 
 
 
+
+
 /**
  * Add the correct display in IE.
  */
@@ -722,6 +798,8 @@ canvas {
 template {
     display: none;
 }
+
+
 
 
 
@@ -748,6 +826,8 @@ body {
 a:focus {
     outline: none;
 }
+
+
 
 
 
@@ -818,12 +898,12 @@ a:focus {
         margin: 0;
         float: left;
     }
-    .change-lang{
+    .change-lang {
         float: right;
         display: block;
         line-height: 40px;
-        font-size: 12px;        
-        a{
+        font-size: 12px;
+        a {
             text-decoration: none;
             letter-spacing: 1px;
         }
@@ -883,7 +963,7 @@ a:focus {
                     background-color: #245f8a;
                 }
             }
-            &.nav-checked{
+            &.nav-checked {
                 background-color: #245f8a;
             }
         }
@@ -909,6 +989,8 @@ a:focus {
         margin: 0;
     }
 }
+
+
 
 
 
@@ -942,4 +1024,53 @@ a:focus {
     bottom: 0;
     z-index: 1000;
     display: none;
+}
+
+
+
+
+/*响应式*/
+
+@media screen and (max-width: 425px) {
+    .container {
+        width: 100%;
+    }
+    .nav {
+        width: 100%;
+        min-width: auto;
+    }
+    .banner {
+        min-width: auto !important;
+        img {
+            min-height: 150px;
+        }
+    }
+    .second-wrapper {
+        width: 300px !important;
+        li {
+            a {
+                padding: 0 10px !important;
+                line-height: 35px;
+                font-size: 12px;
+            }
+            &:nth-child(1){
+                img{
+                    width: 20px !important;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+    .hot-ar {
+        width: auto !important;
+        .title-top{
+            padding: 20px 20px 10px !important;
+        }
+    }
+    .footer{
+        min-width: auto !important;
+        padding: 20px 0 10px 0;
+        height: 60px;
+        font-size: 14px;
+    }
 }
